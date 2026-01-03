@@ -49,14 +49,23 @@ def has_simplified_chinese(text: str) -> bool:
 def sample_wiki(source_dir: Path, count: int) -> list:
     """從維基百科抽樣"""
     samples = []
-    wiki_dir = source_dir / "wiki2019zh"
+    # 嘗試不同可能的目錄名稱
+    possible_dirs = ["wiki_zh", "wiki2019zh", "wiki"]
+    wiki_dir = None
+    for name in possible_dirs:
+        if (source_dir / name).exists():
+            wiki_dir = source_dir / name
+            break
 
-    if not wiki_dir.exists():
-        print(f"⚠️ 找不到 wiki2019zh，跳過")
+    if wiki_dir is None:
+        print(f"⚠️ 找不到 wiki 語料，跳過")
         return samples
 
-    # 找所有 JSON 檔案
+    # 找所有檔案（可能是 JSON 或 wiki_00 格式）
     json_files = list(wiki_dir.glob("*.json")) + list(wiki_dir.glob("**/*.json"))
+    if not json_files:
+        # 嘗試找 wiki_xx 格式檔案（每行是 JSON）
+        json_files = list(wiki_dir.glob("**/wiki_*"))
     if not json_files:
         # 嘗試找 txt 檔
         json_files = list(wiki_dir.glob("*.txt"))
