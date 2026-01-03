@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "source": "新聞語料抽樣",
+    "source_url": "https://github.com/brightmart/nlp_chinese_corpus",
+    "license": "待確認",
+    "collected_date": "2026-01-03",
+    "description": "新聞類正式用語測試語料"
+  },
+  "corpus": [
+    {
+      "id": "news_001",
+      "input": "据新华社报道，该软件已经发布。",
+      "expected": "據新華社報導，該軟體已經發布。",
+      "tags": ["news", "it"],
+      "notes": "软件→軟體, 发布→發布"
+    },
+    {
+      "id": "news_002",
+      "input": "国务院发布了最新的经济数据。",
+      "expected": "國務院發布了最新的經濟數據。",
+      "tags": ["news", "politics"],
+      "notes": "发布→發布, 数据→數據"
+    },
+    {
+      "id": "news_003",
+      "input": "该项目将于明年完成后投入使用。",
+      "expected": "該專案將於明年完成後投入使用。",
+      "tags": ["news", "project"],
+      "notes": "项目→專案, 完成后→完成後"
+    }
+  ]
+}

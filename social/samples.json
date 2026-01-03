@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source": "社群媒體抽樣",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-01-03",
+    "description": "口語化社群媒體測試語料"
+  },
+  "corpus": [
+    {
+      "id": "social_001",
+      "input": "今天的头发被风吹乱了，好烦。",
+      "expected": "今天的頭髮被風吹亂了，好煩。",
+      "tags": ["daily", "hair"],
+      "notes": "头发→頭髮（髮不是發）, 风→風, 乱→亂"
+    },
+    {
+      "id": "social_002",
+      "input": "刚买的U盘坏了，气死我了。",
+      "expected": "剛買的隨身碟壞了，氣死我了。",
+      "tags": ["daily", "it"],
+      "notes": "U盘→隨身碟"
+    },
+    {
+      "id": "social_003",
+      "input": "游泳之后去吃面条，太爽了！",
+      "expected": "游泳之後去吃麵條，太爽了！",
+      "tags": ["daily", "food"],
+      "notes": "游泳保持游, 之后→之後, 面条→麵條"
+    },
+    {
+      "id": "social_004",
+      "input": "皇后娘娘驾到，臣妾接驾。",
+      "expected": "皇后娘娘駕到，臣妾接駕。",
+      "tags": ["meme", "drama"],
+      "notes": "皇后保持后（不轉後）, 驾→駕"
+    },
+    {
+      "id": "social_005",
+      "input": "尽量别熬夜，对身体不好。",
+      "expected": "儘量別熬夜，對身體不好。",
+      "tags": ["daily", "health"],
+      "notes": "尽量→儘量（儘不是盡）"
+    }
+  ]
+}

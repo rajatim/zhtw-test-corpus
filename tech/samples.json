@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source": "技術文檔抽樣",
+    "source_url": "https://github.com/justjavac/free-programming-books-zh_CN",
+    "license": "待確認",
+    "collected_date": "2026-01-03",
+    "description": "IT/程式術語測試語料"
+  },
+  "corpus": [
+    {
+      "id": "tech_001",
+      "input": "使用递归函数来解决这个问题。",
+      "expected": "使用遞迴函式來解決這個問題。",
+      "tags": ["programming", "algorithm"],
+      "notes": "递归→遞迴, 函数→函式"
+    },
+    {
+      "id": "tech_002",
+      "input": "该软件的源代码托管在云服务器上。",
+      "expected": "該軟體的原始碼託管在雲端伺服器上。",
+      "tags": ["programming", "cloud"],
+      "notes": "软件→軟體, 源代码→原始碼, 云→雲端, 服务器→伺服器"
+    },
+    {
+      "id": "tech_003",
+      "input": "程序员需要调试这个内存泄漏的问题。",
+      "expected": "程式設計師需要除錯這個記憶體洩漏的問題。",
+      "tags": ["programming", "debugging"],
+      "notes": "程序员→程式設計師, 调试→除錯, 内存→記憶體"
+    },
+    {
+      "id": "tech_004",
+      "input": "通过异步回调来处理网络请求。",
+      "expected": "透過非同步回呼來處理網路請求。",
+      "tags": ["programming", "async"],
+      "notes": "异步→非同步, 回调→回呼, 网络→網路"
+    },
+    {
+      "id": "tech_005",
+      "input": "数据库的查询性能需要优化。",
+      "expected": "資料庫的查詢效能需要最佳化。",
+      "tags": ["database", "performance"],
+      "notes": "数据库→資料庫, 性能→效能, 优化→最佳化"
+    }
+  ]
+}

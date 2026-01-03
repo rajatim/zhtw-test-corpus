@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source": "用戶回報案例",
+    "source_url": "https://github.com/rajatim/zhtw/issues",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-01-03",
+    "description": "用戶回報的轉換問題，用於迴歸測試"
+  },
+  "corpus": [
+    {
+      "id": "regression_001",
+      "input": "只有一只猫",
+      "expected": "只有一隻貓",
+      "tags": ["one-to-many", "只"],
+      "notes": "只有的只保持，一只的只→隻"
+    },
+    {
+      "id": "regression_002",
+      "input": "皇后驾到",
+      "expected": "皇后駕到",
+      "tags": ["identity-mapping", "后"],
+      "notes": "皇后的后不應轉為後"
+    },
+    {
+      "id": "regression_003",
+      "input": "发现头发问题",
+      "expected": "發現頭髮問題",
+      "tags": ["one-to-many", "发"],
+      "notes": "发现→發現, 头发→頭髮"
+    },
+    {
+      "id": "regression_004",
+      "input": "干部在干活",
+      "expected": "幹部在幹活",
+      "tags": ["one-to-many", "干"],
+      "notes": "干部→幹部, 干活→幹活"
+    },
+    {
+      "id": "regression_005",
+      "input": "优盘和U盘",
+      "expected": "隨身碟和隨身碟",
+      "tags": ["synonym", "usb"],
+      "notes": "优盘和U盘都應轉為隨身碟"
+    }
+  ]
+}

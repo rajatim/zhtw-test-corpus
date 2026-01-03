@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "source": "維基百科抽樣",
+    "source_url": "https://zh.wikipedia.org/",
+    "license": "CC-BY-SA-4.0",
+    "collected_date": "2026-01-03",
+    "description": "百科知識類測試語料"
+  },
+  "corpus": [
+    {
+      "id": "wiki_001",
+      "input": "计算机科学是研究信息与计算的理论基础。",
+      "expected": "電腦科學是研究資訊與計算的理論基礎。",
+      "tags": ["science", "computing"],
+      "notes": "计算机→電腦, 信息→資訊"
+    },
+    {
+      "id": "wiki_002",
+      "input": "人工智能是计算机科学的一个分支。",
+      "expected": "人工智慧是電腦科學的一個分支。",
+      "tags": ["science", "ai"],
+      "notes": "人工智能→人工智慧, 计算机→電腦"
+    },
+    {
+      "id": "wiki_003",
+      "input": "悉尼歌剧院是澳大利亚的著名地标。",
+      "expected": "雪梨歌劇院是澳大利亞的著名地標。",
+      "tags": ["geography", "landmark"],
+      "notes": "悉尼→雪梨, 剧→劇, 标→標"
+    }
+  ]
+}
