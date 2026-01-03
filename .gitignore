@@ -13,3 +13,18 @@
 # Temporary files
 *.tmp
 *.bak
+
+# ===================
+# 大型語料庫（本地下載，不入版本控制）
+# ===================
+large/
+
+# 自動生成的樣本（需人工校驗後才入版本控制）
+samples/*/sampled.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
