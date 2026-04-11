@@ -31,3 +31,4 @@ __pycache__/
 
 # Claude Code sensitive settings
 .claude/settings.local.json
+CLAUDE.local.md
