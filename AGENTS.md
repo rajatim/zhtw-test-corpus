@@ -1,4 +1,6 @@
-# zhtw-test-corpus - AI 開發指南
+# zhtw-test-corpus - Agent 開發指南
+
+> **AI 指令來源是 `AGENTS.md`** — Codex 原生讀取(無 import)。`CLAUDE.md` / `GEMINI.md` 是 `@AGENTS.md` 包裝。
 
 ## 重要警告
 
