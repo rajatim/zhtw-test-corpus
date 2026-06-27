@@ -76,6 +76,76 @@
       "expected": "預設頭像太醜了。",
       "tags": ["daily", "ui"],
       "notes": "默认头像→預設頭像, 丑→醜"
+    },
+    {
+      "id": "social_011",
+      "input": "这家店的服务质量不错。",
+      "expected": "這家店的服務品質不錯。",
+      "tags": ["daily", "service"],
+      "notes": "这→這, 服务→服務, 服务质量→服務品質"
+    },
+    {
+      "id": "social_012",
+      "input": "周末想去骑自行车。",
+      "expected": "週末想去騎腳踏車。",
+      "tags": ["daily", "transport"],
+      "notes": "周末→週末, 骑→騎, 自行车→腳踏車"
+    },
+    {
+      "id": "social_013",
+      "input": "手机电量只剩百分之十。",
+      "expected": "手機電量只剩百分之十。",
+      "tags": ["daily", "device"],
+      "notes": "手机→手機, 电量→電量, 只剩的只保持"
+    },
+    {
+      "id": "social_014",
+      "input": "刚刚上传的照片被压缩了。",
+      "expected": "剛剛上傳的照片被壓縮了。",
+      "tags": ["daily", "media"],
+      "notes": "刚刚→剛剛, 上传→上傳, 压缩→壓縮"
+    },
+    {
+      "id": "social_015",
+      "input": "我把账号密码忘记了。",
+      "expected": "我把帳號密碼忘記了。",
+      "tags": ["daily", "account"],
+      "notes": "账号→帳號, 密码→密碼, 忘记→忘記"
+    },
+    {
+      "id": "social_016",
+      "input": "这个应用一直闪退。",
+      "expected": "這個應用程式一直閃退。",
+      "tags": ["daily", "app"],
+      "notes": "应用一直闪退→應用程式一直閃退"
+    },
+    {
+      "id": "social_017",
+      "input": "留言区又吵起来了。",
+      "expected": "留言區又吵起來了。",
+      "tags": ["daily", "social"],
+      "notes": "留言区→留言區, 起来→起來"
+    },
+    {
+      "id": "social_018",
+      "input": "这个链接打不开。",
+      "expected": "這個連結打不開。",
+      "tags": ["daily", "web"],
+      "notes": "这个→這個, 链接→連結"
+    },
+    {
+      "id": "social_019",
+      "input": "老板说今天可以远程办公。",
+      "expected": "老闆說今天可以遠端辦公。",
+      "tags": ["daily", "work"],
+      "notes": "老板→老闆, 说→說, 远程办公→遠端辦公"
+    },
+    {
+      "id": "social_020",
+      "input": "这个表情包太好笑了。",
+      "expected": "這個貼圖包太好笑了。",
+      "tags": ["daily", "social"],
+      "notes": "表情包→貼圖包"
     }
   ]
 }

@@ -76,6 +76,76 @@
       "expected": "日誌文件記錄錯誤資訊。",
       "tags": ["logging", "debugging"],
       "notes": "日志→日誌, 记录→記錄, 错误→錯誤, 信息→資訊"
+    },
+    {
+      "id": "tech_011",
+      "input": "命令行工具会读取环境变量。",
+      "expected": "命令列工具會讀取環境變數。",
+      "tags": ["cli", "configuration"],
+      "notes": "命令行→命令列, 环境变量→環境變數"
+    },
+    {
+      "id": "tech_012",
+      "input": "请提交错误报告并附上日志。",
+      "expected": "請提交錯誤報告並附上日誌。",
+      "tags": ["debugging", "logging"],
+      "notes": "请→請, 错误→錯誤, 日志→日誌"
+    },
+    {
+      "id": "tech_013",
+      "input": "前端组件需要支持深色模式。",
+      "expected": "前端元件需要支援深色模式。",
+      "tags": ["frontend", "ui"],
+      "notes": "组件→元件, 支持深色模式→支援深色模式"
+    },
+    {
+      "id": "tech_014",
+      "input": "后端服务返回状态码。",
+      "expected": "後端服務回傳狀態碼。",
+      "tags": ["backend", "api"],
+      "notes": "后端→後端, 服务→服務, 返回状态码→回傳狀態碼"
+    },
+    {
+      "id": "tech_015",
+      "input": "这个算法的时间复杂度很高。",
+      "expected": "這個演算法的時間複雜度很高。",
+      "tags": ["algorithm"],
+      "notes": "算法→演算法, 复杂度→複雜度"
+    },
+    {
+      "id": "tech_016",
+      "input": "浏览器缓存需要清除。",
+      "expected": "瀏覽器快取需要清除。",
+      "tags": ["browser", "cache"],
+      "notes": "浏览器→瀏覽器, 缓存→快取"
+    },
+    {
+      "id": "tech_017",
+      "input": "数据库迁移脚本失败了。",
+      "expected": "資料庫遷移指令碼失敗了。",
+      "tags": ["database", "migration"],
+      "notes": "数据库→資料庫, 脚本→指令碼, 失败→失敗"
+    },
+    {
+      "id": "tech_018",
+      "input": "输入验证可以防止注入攻击。",
+      "expected": "輸入驗證可以防止注入攻擊。",
+      "tags": ["security"],
+      "notes": "输入→輸入, 验证→驗證, 攻击→攻擊"
+    },
+    {
+      "id": "tech_019",
+      "input": "单元测试覆盖率不足。",
+      "expected": "單元測試覆蓋率不足。",
+      "tags": ["testing"],
+      "notes": "单元测试→單元測試, 覆盖率→覆蓋率"
+    },
+    {
+      "id": "tech_020",
+      "input": "请检查请求头和响应头。",
+      "expected": "請檢查請求標頭和回應標頭。",
+      "tags": ["api", "http"],
+      "notes": "请求头→請求標頭, 响应头→回應標頭"
     }
   ]
 }

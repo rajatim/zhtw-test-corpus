@@ -76,6 +76,76 @@
       "expected": "網際網路協定定義了資料傳輸規則。",
       "tags": ["science", "computing"],
       "notes": "互联网协议→網際網路協定, 数据→資料, 传输→傳輸, 规则→規則"
+    },
+    {
+      "id": "wiki_011",
+      "input": "量子力学描述微观世界的规律。",
+      "expected": "量子力學描述微觀世界的規律。",
+      "tags": ["science", "physics"],
+      "notes": "力学→力學, 微观→微觀, 规律→規律"
+    },
+    {
+      "id": "wiki_012",
+      "input": "生态系统包含生物与环境。",
+      "expected": "生態系統包含生物與環境。",
+      "tags": ["science", "biology"],
+      "notes": "生态系统→生態系統, 与→與, 环境→環境"
+    },
+    {
+      "id": "wiki_013",
+      "input": "联合国成立于二十世纪。",
+      "expected": "聯合國成立於二十世紀。",
+      "tags": ["organization", "history"],
+      "notes": "联合国→聯合國, 于→於, 世纪→世紀"
+    },
+    {
+      "id": "wiki_014",
+      "input": "意大利位于欧洲南部。",
+      "expected": "義大利位於歐洲南部。",
+      "tags": ["geography", "country"],
+      "notes": "意大利→義大利, 位于→位於, 欧洲→歐洲"
+    },
+    {
+      "id": "wiki_015",
+      "input": "新西兰以自然景观闻名。",
+      "expected": "紐西蘭以自然景觀聞名。",
+      "tags": ["geography", "country"],
+      "notes": "新西兰→紐西蘭, 景观→景觀, 闻名→聞名"
+    },
+    {
+      "id": "wiki_016",
+      "input": "算法分析是计算机科学的重要主题。",
+      "expected": "演算法分析是電腦科學的重要主題。",
+      "tags": ["science", "computing"],
+      "notes": "算法→演算法, 计算机科学→電腦科學, 主题→主題"
+    },
+    {
+      "id": "wiki_017",
+      "input": "光合作用将光能转化为化学能。",
+      "expected": "光合作用將光能轉化為化學能。",
+      "tags": ["science", "biology"],
+      "notes": "将→將, 转化→轉化, 化学→化學"
+    },
+    {
+      "id": "wiki_018",
+      "input": "数据库索引用于提高查询速度。",
+      "expected": "資料庫索引用於提高查詢速度。",
+      "tags": ["science", "computing"],
+      "notes": "数据库→資料庫, 索引用于→索引用於, 查询→查詢"
+    },
+    {
+      "id": "wiki_019",
+      "input": "遗传学研究基因与性状。",
+      "expected": "遺傳學研究基因與性狀。",
+      "tags": ["science", "biology"],
+      "notes": "遗传学→遺傳學, 与→與, 性状→性狀"
+    },
+    {
+      "id": "wiki_020",
+      "input": "互联网的发展改变了信息传播方式。",
+      "expected": "網際網路的發展改變了資訊傳播方式。",
+      "tags": ["science", "computing"],
+      "notes": "互联网→網際網路, 发展→發展, 信息→資訊, 传播→傳播"
     }
   ]
 }

@@ -76,6 +76,76 @@
       "expected": "註冊後請登出目前帳戶",
       "tags": ["ui", "login"],
       "notes": "注册→註冊, 后→後, 注销当前账户→登出目前帳戶"
+    },
+    {
+      "id": "regression_011",
+      "input": "收藏这篇文章到收藏夹",
+      "expected": "收藏這篇文章到我的最愛",
+      "tags": ["over-conversion", "ui"],
+      "notes": "收藏動詞保持，收藏夹→我的最愛"
+    },
+    {
+      "id": "regression_012",
+      "input": "干净的饼干放在桌上",
+      "expected": "乾淨的餅乾放在桌上",
+      "tags": ["one-to-many", "干"],
+      "notes": "干净→乾淨, 饼干→餅乾"
+    },
+    {
+      "id": "regression_013",
+      "input": "撤销操作不是撤销合同",
+      "expected": "復原操作不是撤銷合約",
+      "tags": ["ui", "legal"],
+      "notes": "撤销操作→復原操作, 撤销合同→撤銷合約"
+    },
+    {
+      "id": "regression_014",
+      "input": "注销账户后仍保留公司登记",
+      "expected": "登出帳戶後仍保留公司登記",
+      "tags": ["ui", "legal"],
+      "notes": "注销账户→登出帳戶, 公司登记→公司登記"
+    },
+    {
+      "id": "regression_015",
+      "input": "500克巧克力",
+      "expected": "500公克巧克力",
+      "tags": ["one-to-many", "克"],
+      "notes": "數字語境克→公克，巧克力保持"
+    },
+    {
+      "id": "regression_016",
+      "input": "长发程序员在理发店写程序",
+      "expected": "長髮程式設計師在理髮店寫程式",
+      "tags": ["one-to-many", "it"],
+      "notes": "长发→長髮, 程序员→程式設計師, 写程序→寫程式"
+    },
+    {
+      "id": "regression_017",
+      "input": "里长在邻里服务中心",
+      "expected": "里長在鄰里服務中心",
+      "tags": ["one-to-many", "里"],
+      "notes": "里长保持里, 邻里→鄰里"
+    },
+    {
+      "id": "regression_018",
+      "input": "禁用账号和禁用药物不同",
+      "expected": "停用帳號和禁用藥物不同",
+      "tags": ["over-conversion", "ui", "medical"],
+      "notes": "禁用账号→停用帳號, 禁用药物不應轉停用藥物"
+    },
+    {
+      "id": "regression_019",
+      "input": "文件系统里的文件名",
+      "expected": "檔案系統裡的檔名",
+      "tags": ["it", "file"],
+      "notes": "文件系统→檔案系統, 里的→裡的, 文件名→檔名"
+    },
+    {
+      "id": "regression_020",
+      "input": "后台程序里的日志文件",
+      "expected": "背景程式裡的日誌文件",
+      "tags": ["it", "logging"],
+      "notes": "后台程序→背景程式, 里的→裡的, 日志→日誌"
     }
   ]
 }
