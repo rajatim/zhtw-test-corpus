@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "source": "人工校驗擴充樣本",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-06-27",
+    "description": "regressions 類精選語料擴充到 60 筆的一部分"
+  },
+  "corpus": [
+    {
+      "id": "regression_021",
+      "input": "每周到店一次",
+      "expected": "每週到店一次",
+      "tags": [
+        "regression",
+        "周到"
+      ],
+      "notes": "每周到不應被周到 identity 擋住"
+    },
+    {
+      "id": "regression_022",
+      "input": "这周到的服务很贴心",
+      "expected": "這周到的服務很貼心",
+      "tags": [
+        "regression",
+        "周到"
+      ],
+      "notes": "周到形容詞仍保持周到"
+    },
+    {
+      "id": "regression_023",
+      "input": "交通部公布春节疏运计划",
+      "expected": "交通部公布春節疏運計畫",
+      "tags": [
+        "regression",
+        "公布"
+      ],
+      "notes": "公布不應轉公佈"
+    },
+    {
+      "id": "regression_024",
+      "input": "台积电宣布扩大先进制程投资",
+      "expected": "台積電宣布擴大先進製程投資",
+      "tags": [
+        "regression",
+        "宣布"
+      ],
+      "notes": "宣布不應轉宣佈"
+    },
+    {
+      "id": "regression_025",
+      "input": "持续集成流水线已经通过",
+      "expected": "持續整合管線已經通過",
+      "tags": [
+        "regression",
+        "ci"
+      ],
+      "notes": "CI 通過語境"
+    },
+    {
+      "id": "regression_026",
+      "input": "已经通过 API 上传文件",
+      "expected": "已經透過 API 上傳檔案",
+      "tags": [
+        "regression",
+        "通过"
+      ],
+      "notes": "通过 API 應為透過 API"
+    },
+    {
+      "id": "regression_027",
+      "input": "禁用药物清单已经更新",
+      "expected": "禁用藥物清單已經更新",
+      "tags": [
+        "regression",
+        "禁用"
+      ],
+      "notes": "禁用藥物不應轉停用藥物"
+    },
+    {
+      "id": "regression_028",
+      "input": "禁用账号后请通知用户",
+      "expected": "停用帳號後請通知使用者",
+      "tags": [
+        "regression",
+        "禁用"
+      ],
+      "notes": "禁用账号→停用帳號"
+    },
+    {
+      "id": "regression_029",
+      "input": "数据库索引用于提高查询速度",
+      "expected": "資料庫索引用於提高查詢速度",
+      "tags": [
+        "regression",
+        "用于"
+      ],
+      "notes": "索引用于→索引用於"
+    },
+    {
+      "id": "regression_030",
+      "input": "后端服务返回状态码",
+      "expected": "後端服務回傳狀態碼",
+      "tags": [
+        "regression",
+        "返回"
+      ],
+      "notes": "返回状态码→回傳狀態碼"
+    },
+    {
+      "id": "regression_031",
+      "input": "前端组件需要支持深色模式",
+      "expected": "前端元件需要支援深色模式",
+      "tags": [
+        "regression",
+        "支持"
+      ],
+      "notes": "技術語境支持→支援"
+    },
+    {
+      "id": "regression_032",
+      "input": "我支持这个决定",
+      "expected": "我支持這個決定",
+      "tags": [
+        "regression",
+        "支持"
+      ],
+      "notes": "一般語境支持保持支持"
+    },
+    {
+      "id": "regression_033",
+      "input": "面向对象编程",
+      "expected": "物件導向程式設計",
+      "tags": [
+        "regression",
+        "对象"
+      ],
+      "notes": "技術語境对象→物件"
+    },
+    {
+      "id": "regression_034",
+      "input": "他的结婚对象很温柔",
+      "expected": "他的結婚對象很溫柔",
+      "tags": [
+        "regression",
+        "对象"
+      ],
+      "notes": "一般對象不應轉物件"
+    },
+    {
+      "id": "regression_035",
+      "input": "保存文件成功",
+      "expected": "儲存檔案成功",
+      "tags": [
+        "regression",
+        "保存"
+      ],
+      "notes": "UI 檔案語境保存→儲存"
+    },
+    {
+      "id": "regression_036",
+      "input": "保存文化遗产",
+      "expected": "保存文化遺產",
+      "tags": [
+        "regression",
+        "保存"
+      ],
+      "notes": "一般保存不應轉儲存"
+    },
+    {
+      "id": "regression_037",
+      "input": "刷新页面看看",
+      "expected": "重新整理頁面看看",
+      "tags": [
+        "regression",
+        "刷新"
+      ],
+      "notes": "UI 刷新頁面→重新整理頁面"
+    },
+    {
+      "id": "regression_038",
+      "input": "刷新世界纪录",
+      "expected": "刷新世界紀錄",
+      "tags": [
+        "regression",
+        "刷新"
+      ],
+      "notes": "一般刷新保持刷新"
+    },
+    {
+      "id": "regression_039",
+      "input": "撤销操作成功",
+      "expected": "復原操作成功",
+      "tags": [
+        "regression",
+        "撤销"
+      ],
+      "notes": "UI 撤销操作→復原操作"
+    },
+    {
+      "id": "regression_040",
+      "input": "撤销合同条款",
+      "expected": "撤銷合約條款",
+      "tags": [
+        "regression",
+        "撤销"
+      ],
+      "notes": "法律撤销→撤銷"
+    },
+    {
+      "id": "regression_041",
+      "input": "注销账户流程",
+      "expected": "登出帳戶流程",
+      "tags": [
+        "regression",
+        "注销"
+      ],
+      "notes": "帳戶語境→登出"
+    },
+    {
+      "id": "regression_042",
+      "input": "注销公司登记",
+      "expected": "註銷公司登記",
+      "tags": [
+        "regression",
+        "注销"
+      ],
+      "notes": "法律登記語境→註銷"
+    },
+    {
+      "id": "regression_043",
+      "input": "文件系统损坏",
+      "expected": "檔案系統損壞",
+      "tags": [
+        "regression",
+        "文件"
+      ],
+      "notes": "文件系统→檔案系統"
+    },
+    {
+      "id": "regression_044",
+      "input": "政府发布官方文件",
+      "expected": "政府發布官方文件",
+      "tags": [
+        "regression",
+        "文件"
+      ],
+      "notes": "正式文件保持文件"
+    },
+    {
+      "id": "regression_045",
+      "input": "写程序前先看法律程序",
+      "expected": "寫程式前先看法律程序",
+      "tags": [
+        "regression",
+        "程序"
+      ],
+      "notes": "程式/程序雙語境"
+    },
+    {
+      "id": "regression_046",
+      "input": "默认头像太丑了",
+      "expected": "預設頭像太醜了",
+      "tags": [
+        "regression",
+        "默认"
+      ],
+      "notes": "UI 默认→預設"
+    },
+    {
+      "id": "regression_047",
+      "input": "他默认了指控",
+      "expected": "他默認了指控",
+      "tags": [
+        "regression",
+        "默认"
+      ],
+      "notes": "一般默认→默認"
+    },
+    {
+      "id": "regression_048",
+      "input": "开源项目管理",
+      "expected": "開源專案管理",
+      "tags": [
+        "regression",
+        "项目"
+      ],
+      "notes": "開源專案"
+    },
+    {
+      "id": "regression_049",
+      "input": "检查项目清单",
+      "expected": "檢查項目清單",
+      "tags": [
+        "regression",
+        "项目"
+      ],
+      "notes": "檢查項目"
+    },
+    {
+      "id": "regression_050",
+      "input": "一条消息",
+      "expected": "一則訊息",
+      "tags": [
+        "regression",
+        "消息"
+      ],
+      "notes": "消息量詞語境→訊息"
+    },
+    {
+      "id": "regression_051",
+      "input": "好消息传来",
+      "expected": "好消息傳來",
+      "tags": [
+        "regression",
+        "消息"
+      ],
+      "notes": "好消息保持消息"
+    },
+    {
+      "id": "regression_052",
+      "input": "周到的服务",
+      "expected": "周到的服務",
+      "tags": [
+        "regression",
+        "周到"
+      ],
+      "notes": "周到不應轉週到"
+    },
+    {
+      "id": "regression_053",
+      "input": "看了下周遭的环境",
+      "expected": "看了下周遭的環境",
+      "tags": [
+        "regression",
+        "周遭"
+      ],
+      "notes": "下周不應吃掉周遭"
+    },
+    {
+      "id": "regression_054",
+      "input": "500克巧克力蛋糕",
+      "expected": "500公克巧克力蛋糕",
+      "tags": [
+        "regression",
+        "克"
+      ],
+      "notes": "數量克→公克，巧克力保持"
+    },
+    {
+      "id": "regression_055",
+      "input": "克服困难之后吃巧克力",
+      "expected": "克服困難之後吃巧克力",
+      "tags": [
+        "regression",
+        "克"
+      ],
+      "notes": "克服/巧克力不應轉公克"
+    },
+    {
+      "id": "regression_056",
+      "input": "干部把饼干放干净",
+      "expected": "幹部把餅乾放乾淨",
+      "tags": [
+        "regression",
+        "干"
+      ],
+      "notes": "干多義語境"
+    },
+    {
+      "id": "regression_057",
+      "input": "里长在邻里服务中心",
+      "expected": "里長在鄰里服務中心",
+      "tags": [
+        "regression",
+        "里"
+      ],
+      "notes": "里長與鄰里"
+    },
+    {
+      "id": "regression_058",
+      "input": "皇后在完成后离开",
+      "expected": "皇后在完成後離開",
+      "tags": [
+        "regression",
+        "后"
+      ],
+      "notes": "皇后/完成後雙語境"
+    },
+    {
+      "id": "regression_059",
+      "input": "请更新依赖并重新构建项目",
+      "expected": "請更新相依套件並重新建置專案",
+      "tags": [
+        "regression",
+        "it"
+      ],
+      "notes": "相依套件與專案建置"
+    },
+    {
+      "id": "regression_060",
+      "input": "这个表情包太好笑了",
+      "expected": "這個貼圖包太好笑了",
+      "tags": [
+        "regression",
+        "social"
+      ],
+      "notes": "表情包→貼圖包"
+    }
+  ]
+}

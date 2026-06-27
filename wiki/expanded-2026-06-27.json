@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "source": "人工校驗擴充樣本",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-06-27",
+    "description": "wiki 類精選語料擴充到 60 筆的一部分"
+  },
+  "corpus": [
+    {
+      "id": "wiki_021",
+      "input": "软件工程研究软件开发与维护方法。",
+      "expected": "軟體工程研究軟體開發與維護方法。",
+      "tags": [
+        "science",
+        "software"
+      ],
+      "notes": "软件工程→軟體工程"
+    },
+    {
+      "id": "wiki_022",
+      "input": "操作系统负责管理硬件资源。",
+      "expected": "作業系統負責管理硬體資源。",
+      "tags": [
+        "science",
+        "computing"
+      ],
+      "notes": "操作系统→作業系統，硬件→硬體"
+    },
+    {
+      "id": "wiki_023",
+      "input": "编译器会把源代码转换为机器代码。",
+      "expected": "編譯器會把原始碼轉換為機器程式碼。",
+      "tags": [
+        "science",
+        "computing"
+      ],
+      "notes": "编译器→編譯器，源代码→原始碼"
+    },
+    {
+      "id": "wiki_024",
+      "input": "网络协议定义设备之间的通信规则。",
+      "expected": "網路協議定義設備之間的通訊規則。",
+      "tags": [
+        "science",
+        "network"
+      ],
+      "notes": "网络协议→網路協定，通信→通訊"
+    },
+    {
+      "id": "wiki_025",
+      "input": "数据结构包含数组、链表与树。",
+      "expected": "資料結構包含陣列、連結串列與樹。",
+      "tags": [
+        "science",
+        "computing"
+      ],
+      "notes": "数据结构→資料結構，数组→陣列"
+    },
+    {
+      "id": "wiki_026",
+      "input": "概率论是数学的重要分支。",
+      "expected": "機率論是數學的重要分支。",
+      "tags": [
+        "science",
+        "math"
+      ],
+      "notes": "概率→機率，数学→數學"
+    },
+    {
+      "id": "wiki_027",
+      "input": "细胞核含有遗传物质。",
+      "expected": "細胞核含有遺傳物質。",
+      "tags": [
+        "science",
+        "biology"
+      ],
+      "notes": "细胞核→細胞核，遗传→遺傳"
+    },
+    {
+      "id": "wiki_028",
+      "input": "太阳能是一种可再生能源。",
+      "expected": "太陽能是一種可再生能源。",
+      "tags": [
+        "science",
+        "energy"
+      ],
+      "notes": "太阳能→太陽能，能源→能源"
+    },
+    {
+      "id": "wiki_029",
+      "input": "地球大气层保护生命免受辐射。",
+      "expected": "地球大氣層保護生命免受輻射。",
+      "tags": [
+        "science",
+        "earth"
+      ],
+      "notes": "大气层→大氣層，辐射→輻射"
+    },
+    {
+      "id": "wiki_030",
+      "input": "人类学研究人类社会与文化。",
+      "expected": "人類學研究人類社會與文化。",
+      "tags": [
+        "science",
+        "anthropology"
+      ],
+      "notes": "人类学→人類學，社会→社會"
+    },
+    {
+      "id": "wiki_031",
+      "input": "台北是台湾北部的重要城市。",
+      "expected": "臺北是臺灣北部的重要城市。",
+      "tags": [
+        "geography",
+        "city"
+      ],
+      "notes": "台北→臺北，台湾→台灣"
+    },
+    {
+      "id": "wiki_032",
+      "input": "东京是日本的首都。",
+      "expected": "東京是日本的首都。",
+      "tags": [
+        "geography",
+        "city"
+      ],
+      "notes": "东京→東京，日本保持"
+    },
+    {
+      "id": "wiki_033",
+      "input": "德国位于欧洲中部。",
+      "expected": "德國位於歐洲中部。",
+      "tags": [
+        "geography",
+        "country"
+      ],
+      "notes": "德国→德國，欧洲→歐洲"
+    },
+    {
+      "id": "wiki_034",
+      "input": "加拿大拥有丰富的自然资源。",
+      "expected": "加拿大擁有豐富的自然資源。",
+      "tags": [
+        "geography",
+        "country"
+      ],
+      "notes": "拥有→擁有，资源→資源"
+    },
+    {
+      "id": "wiki_035",
+      "input": "澳大利亚的生态环境十分多样。",
+      "expected": "澳大利亞的生態環境十分多樣。",
+      "tags": [
+        "geography",
+        "environment"
+      ],
+      "notes": "澳大利亚→澳大利亞，生态→生態"
+    },
+    {
+      "id": "wiki_036",
+      "input": "第二次世界大战改变了国际秩序。",
+      "expected": "第二次世界大戰改變了國際秩序。",
+      "tags": [
+        "history"
+      ],
+      "notes": "大战→大戰，国际→國際"
+    },
+    {
+      "id": "wiki_037",
+      "input": "工业革命推动生产方式改变。",
+      "expected": "工業革命推動生產方式改變。",
+      "tags": [
+        "history"
+      ],
+      "notes": "工业→工業，推动→推動"
+    },
+    {
+      "id": "wiki_038",
+      "input": "印刷术促进知识传播。",
+      "expected": "印刷術促進知識傳播。",
+      "tags": [
+        "history",
+        "technology"
+      ],
+      "notes": "印刷术→印刷術，传播→傳播"
+    },
+    {
+      "id": "wiki_039",
+      "input": "民主制度强调公民参与。",
+      "expected": "民主制度強調公民參與。",
+      "tags": [
+        "politics"
+      ],
+      "notes": "强调→強調，参与→參與"
+    },
+    {
+      "id": "wiki_040",
+      "input": "市场经济依赖价格机制。",
+      "expected": "市場經濟相依性價格機制。",
+      "tags": [
+        "economics"
+      ],
+      "notes": "市场经济→市場經濟，价格→價格"
+    },
+    {
+      "id": "wiki_041",
+      "input": "机器翻译是自然语言处理的应用。",
+      "expected": "機器翻譯是自然語言處理的應用。",
+      "tags": [
+        "science",
+        "ai"
+      ],
+      "notes": "机器翻译→機器翻譯，自然语言处理→自然語言處理"
+    },
+    {
+      "id": "wiki_042",
+      "input": "密码学研究信息安全与加密技术。",
+      "expected": "密碼學研究資訊安全與加密技術。",
+      "tags": [
+        "science",
+        "security"
+      ],
+      "notes": "密码学→密碼學，信息安全→資訊安全"
+    },
+    {
+      "id": "wiki_043",
+      "input": "云计算提供弹性的计算资源。",
+      "expected": "雲端運算提供彈性的計算資源。",
+      "tags": [
+        "science",
+        "cloud"
+      ],
+      "notes": "云计算→雲端運算，资源→資源"
+    },
+    {
+      "id": "wiki_044",
+      "input": "微处理器是现代计算机的核心组件。",
+      "expected": "微處理器是現代電腦的核心元件。",
+      "tags": [
+        "science",
+        "hardware"
+      ],
+      "notes": "微处理器→微處理器，组件→元件"
+    },
+    {
+      "id": "wiki_045",
+      "input": "数据库索引可以提高检索效率。",
+      "expected": "資料庫索引可以提高檢索效率。",
+      "tags": [
+        "science",
+        "database"
+      ],
+      "notes": "数据库→資料庫，效率→效率"
+    },
+    {
+      "id": "wiki_046",
+      "input": "生态保护需要长期监测。",
+      "expected": "生態保護需要長期監測。",
+      "tags": [
+        "science",
+        "environment"
+      ],
+      "notes": "生态→生態，监测→監測"
+    },
+    {
+      "id": "wiki_047",
+      "input": "气候变化影响全球农业生产。",
+      "expected": "氣候變化影響全球農業生產。",
+      "tags": [
+        "science",
+        "climate"
+      ],
+      "notes": "气候→氣候，农业→農業"
+    },
+    {
+      "id": "wiki_048",
+      "input": "化学反应会形成新的物质。",
+      "expected": "化學反應會形成新的物質。",
+      "tags": [
+        "science",
+        "chemistry"
+      ],
+      "notes": "化学→化學，反应→反應"
+    },
+    {
+      "id": "wiki_049",
+      "input": "电磁波可以在真空中传播。",
+      "expected": "電磁波可以在真空中傳播。",
+      "tags": [
+        "science",
+        "physics"
+      ],
+      "notes": "电磁波→電磁波，传播→傳播"
+    },
+    {
+      "id": "wiki_050",
+      "input": "统计学用于分析大量数据。",
+      "expected": "統計學用於分析大量資料。",
+      "tags": [
+        "science",
+        "statistics"
+      ],
+      "notes": "统计学→統計學，数据→資料"
+    },
+    {
+      "id": "wiki_051",
+      "input": "神经网络由多个层组成。",
+      "expected": "神經網路由多個層組成。",
+      "tags": [
+        "science",
+        "ai"
+      ],
+      "notes": "神经网络→神經網路，层→層"
+    },
+    {
+      "id": "wiki_052",
+      "input": "图论研究节点与边之间的关系。",
+      "expected": "圖論研究節點與邊之間的關係。",
+      "tags": [
+        "science",
+        "math"
+      ],
+      "notes": "图论→圖論，节点→節點"
+    },
+    {
+      "id": "wiki_053",
+      "input": "遗传算法模拟自然选择过程。",
+      "expected": "遺傳演算法模擬自然選擇過程。",
+      "tags": [
+        "science",
+        "algorithm"
+      ],
+      "notes": "遗传算法→遺傳演算法，自然选择→自然選擇"
+    },
+    {
+      "id": "wiki_054",
+      "input": "虚拟现实技术可以模拟沉浸体验。",
+      "expected": "虛擬現實技術可以模擬沉浸體驗。",
+      "tags": [
+        "science",
+        "vr"
+      ],
+      "notes": "虚拟现实→虛擬實境，体验→體驗"
+    },
+    {
+      "id": "wiki_055",
+      "input": "区块链通过分布式账本记录交易。",
+      "expected": "區塊鏈透過分散式帳本記錄交易。",
+      "tags": [
+        "science",
+        "blockchain"
+      ],
+      "notes": "通过→透過，账本→帳本"
+    },
+    {
+      "id": "wiki_056",
+      "input": "公共卫生政策影响疾病防治。",
+      "expected": "公共衛生政策影響疾病防治。",
+      "tags": [
+        "health",
+        "policy"
+      ],
+      "notes": "公共卫生→公共衛生，疾病→疾病"
+    },
+    {
+      "id": "wiki_057",
+      "input": "城市规划需要考虑交通与住宅。",
+      "expected": "城市規劃需要考慮交通與住宅。",
+      "tags": [
+        "urban"
+      ],
+      "notes": "规划→規劃，交通→交通"
+    },
+    {
+      "id": "wiki_058",
+      "input": "文学作品反映时代背景。",
+      "expected": "文學作品反映時代背景。",
+      "tags": [
+        "culture"
+      ],
+      "notes": "文学→文學，时代→時代"
+    },
+    {
+      "id": "wiki_059",
+      "input": "音乐理论包含节奏与和声。",
+      "expected": "音樂理論包含節奏與和聲。",
+      "tags": [
+        "culture",
+        "music"
+      ],
+      "notes": "音乐→音樂，节奏→節奏"
+    },
+    {
+      "id": "wiki_060",
+      "input": "博物馆保存历史文物。",
+      "expected": "博物館保存歷史文物。",
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "notes": "博物馆→博物館，历史→歷史"
+    }
+  ]
+}

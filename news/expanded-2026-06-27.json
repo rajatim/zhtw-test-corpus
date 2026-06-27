@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "source": "人工校驗擴充樣本",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-06-27",
+    "description": "news 類精選語料擴充到 60 筆的一部分"
+  },
+  "corpus": [
+    {
+      "id": "news_021",
+      "input": "交通部公布春节疏运计划。",
+      "expected": "交通部公布春節疏運計畫。",
+      "tags": [
+        "news",
+        "transport"
+      ],
+      "notes": "公布保持公布，计划→計畫"
+    },
+    {
+      "id": "news_022",
+      "input": "台积电宣布扩大先进制程投资。",
+      "expected": "台積電宣布擴大先進製程投資。",
+      "tags": [
+        "news",
+        "business",
+        "semiconductor"
+      ],
+      "notes": "宣布保持宣布，制程→製程"
+    },
+    {
+      "id": "news_023",
+      "input": "教育部公布考试日期。",
+      "expected": "教育部公布考試日期。",
+      "tags": [
+        "news",
+        "education"
+      ],
+      "notes": "公布保持公布，考试→考試"
+    },
+    {
+      "id": "news_024",
+      "input": "行政院通过新的补助方案。",
+      "expected": "行政院透過新的補助方案。",
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "notes": "通过作通過，补助→補助"
+    },
+    {
+      "id": "news_025",
+      "input": "财政部门说明税制调整方向。",
+      "expected": "財政部門說明稅制調整方向。",
+      "tags": [
+        "news",
+        "finance"
+      ],
+      "notes": "财政→財政，税制→稅制"
+    },
+    {
+      "id": "news_026",
+      "input": "监察机构要求相关单位改善流程。",
+      "expected": "監察機構要求相關單位改善流程。",
+      "tags": [
+        "news",
+        "public"
+      ],
+      "notes": "监察→監察，单位→單位"
+    },
+    {
+      "id": "news_027",
+      "input": "法院今天宣判被告无罪。",
+      "expected": "法院今天宣判被告無罪。",
+      "tags": [
+        "news",
+        "law"
+      ],
+      "notes": "法院新聞正式語境"
+    },
+    {
+      "id": "news_028",
+      "input": "气象部门发布豪雨特报。",
+      "expected": "氣象部門發布豪雨特報。",
+      "tags": [
+        "news",
+        "weather"
+      ],
+      "notes": "气象→氣象，发布→發布"
+    },
+    {
+      "id": "news_029",
+      "input": "农业部门提醒农民注意病虫害。",
+      "expected": "農業部門提醒農民注意病蟲害。",
+      "tags": [
+        "news",
+        "agriculture"
+      ],
+      "notes": "农业→農業，农民→農民"
+    },
+    {
+      "id": "news_030",
+      "input": "经济部表示出口订单持续增加。",
+      "expected": "經濟部表示出口訂單持續增加。",
+      "tags": [
+        "news",
+        "business"
+      ],
+      "notes": "经济→經濟，持续→持續"
+    },
+    {
+      "id": "news_031",
+      "input": "新制度将于明年一月实施。",
+      "expected": "新制度將於明年一月實施。",
+      "tags": [
+        "news",
+        "policy"
+      ],
+      "notes": "将于→將於，实施→實施"
+    },
+    {
+      "id": "news_032",
+      "input": "民调显示多数民众支持改革。",
+      "expected": "民調顯示多數民眾支持改革。",
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "notes": "民调→民調，民众→民眾"
+    },
+    {
+      "id": "news_033",
+      "input": "警方呼吁驾驶人遵守交通规则。",
+      "expected": "警方呼籲駕駛人遵守交通規則。",
+      "tags": [
+        "news",
+        "transport"
+      ],
+      "notes": "呼吁→呼籲，驾驶→駕駛"
+    },
+    {
+      "id": "news_034",
+      "input": "观光业者期待旅客人数回升。",
+      "expected": "觀光業者期待旅客人數回升。",
+      "tags": [
+        "news",
+        "tourism"
+      ],
+      "notes": "观光→觀光，人数→人數"
+    },
+    {
+      "id": "news_035",
+      "input": "研究机构下修今年经济成长率。",
+      "expected": "研究機構下修今年經濟成長率。",
+      "tags": [
+        "news",
+        "finance"
+      ],
+      "notes": "研究机构→研究機構，经济→經濟"
+    },
+    {
+      "id": "news_036",
+      "input": "学校将加强校园安全检查。",
+      "expected": "學校將加強校園安全檢查。",
+      "tags": [
+        "news",
+        "education"
+      ],
+      "notes": "学校→學校，检查→檢查"
+    },
+    {
+      "id": "news_037",
+      "input": "市场监管单位查获违规商品。",
+      "expected": "市場監管單位查獲違規商品。",
+      "tags": [
+        "news",
+        "consumer"
+      ],
+      "notes": "市场→市場，违规→違規"
+    },
+    {
+      "id": "news_038",
+      "input": "文化部宣布开放线上申请。",
+      "expected": "文化部宣布開放線上申請。",
+      "tags": [
+        "news",
+        "culture"
+      ],
+      "notes": "宣布保持宣布，线上→線上"
+    },
+    {
+      "id": "news_039",
+      "input": "水利署表示水库蓄水量回稳。",
+      "expected": "水利署表示水庫蓄水量回穩。",
+      "tags": [
+        "news",
+        "environment"
+      ],
+      "notes": "水库→水庫，稳→穩"
+    },
+    {
+      "id": "news_040",
+      "input": "劳动部提醒雇主依法给付工资。",
+      "expected": "勞動部提醒雇主依法給付工資。",
+      "tags": [
+        "news",
+        "labor"
+      ],
+      "notes": "劳动→勞動，工资→工資"
+    },
+    {
+      "id": "news_041",
+      "input": "检方搜索多处办公室并带回资料。",
+      "expected": "檢方搜尋多處辦公室並帶回資料。",
+      "tags": [
+        "news",
+        "law"
+      ],
+      "notes": "检方→檢方，资料→資料"
+    },
+    {
+      "id": "news_042",
+      "input": "议会今天审议年度预算案。",
+      "expected": "議會今天審議年度預算案。",
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "notes": "议会→議會，审议→審議"
+    },
+    {
+      "id": "news_043",
+      "input": "医院新增夜间门诊服务。",
+      "expected": "醫院新增夜間門診服務。",
+      "tags": [
+        "news",
+        "health"
+      ],
+      "notes": "医院→醫院，门诊→門診"
+    },
+    {
+      "id": "news_044",
+      "input": "环保团体质疑评估报告不完整。",
+      "expected": "環保團體質疑評估報告不完整。",
+      "tags": [
+        "news",
+        "environment"
+      ],
+      "notes": "环保→環保，报告→報告"
+    },
+    {
+      "id": "news_045",
+      "input": "航港局说明船班调整原因。",
+      "expected": "航港局說明船班調整原因。",
+      "tags": [
+        "news",
+        "transport"
+      ],
+      "notes": "说明→說明，调整→調整"
+    },
+    {
+      "id": "news_046",
+      "input": "地方政府推动老旧校舍改建。",
+      "expected": "地方政府推動老舊校舍改建。",
+      "tags": [
+        "news",
+        "education"
+      ],
+      "notes": "推动→推動，旧→舊"
+    },
+    {
+      "id": "news_047",
+      "input": "专家建议民众减少高糖饮食。",
+      "expected": "專家建議民眾減少高糖飲食。",
+      "tags": [
+        "news",
+        "health"
+      ],
+      "notes": "专家→專家，饮食→飲食"
+    },
+    {
+      "id": "news_048",
+      "input": "公司董事会通过现金增资案。",
+      "expected": "公司董事會透過現金增資案。",
+      "tags": [
+        "news",
+        "business"
+      ],
+      "notes": "董事会→董事會，通过→通過"
+    },
+    {
+      "id": "news_049",
+      "input": "住宅价格指数连续三个月上升。",
+      "expected": "住宅價格指數連續三個月上升。",
+      "tags": [
+        "news",
+        "housing"
+      ],
+      "notes": "价格→價格，连续→連續"
+    },
+    {
+      "id": "news_050",
+      "input": "灾害应变中心提升开设等级。",
+      "expected": "災害應變中心提升開設等級。",
+      "tags": [
+        "news",
+        "public"
+      ],
+      "notes": "灾害→災害，应变→應變"
+    },
+    {
+      "id": "news_051",
+      "input": "铁路公司加开返乡列车。",
+      "expected": "鐵路公司加開返鄉列車。",
+      "tags": [
+        "news",
+        "transport"
+      ],
+      "notes": "铁路→鐵路，列车→列車"
+    },
+    {
+      "id": "news_052",
+      "input": "政府补助中小企业升级设备。",
+      "expected": "政府補助中小企業升級設備。",
+      "tags": [
+        "news",
+        "business"
+      ],
+      "notes": "补助→補助，企业→企業"
+    },
+    {
+      "id": "news_053",
+      "input": "官方说明数据统计方式。",
+      "expected": "官方說明資料統計方式。",
+      "tags": [
+        "news",
+        "data"
+      ],
+      "notes": "数据→數據，统计→統計"
+    },
+    {
+      "id": "news_054",
+      "input": "疫苗预约平台明天开放登记。",
+      "expected": "疫苗預約平臺明天開放登記。",
+      "tags": [
+        "news",
+        "health",
+        "platform"
+      ],
+      "notes": "预约→預約，平台→平台"
+    },
+    {
+      "id": "news_055",
+      "input": "选务机关公布投票注意事项。",
+      "expected": "選務機關公布投票注意事項。",
+      "tags": [
+        "news",
+        "election"
+      ],
+      "notes": "公布保持公布，事项→事項"
+    },
+    {
+      "id": "news_056",
+      "input": "商业区人潮带动餐饮业绩。",
+      "expected": "商業區人潮帶動餐飲業績。",
+      "tags": [
+        "news",
+        "business"
+      ],
+      "notes": "商业→商業，餐饮→餐飲"
+    },
+    {
+      "id": "news_057",
+      "input": "警方加强周末酒驾取缔。",
+      "expected": "警方加強週末酒駕取締。",
+      "tags": [
+        "news",
+        "law",
+        "transport"
+      ],
+      "notes": "周末→週末，酒驾→酒駕"
+    },
+    {
+      "id": "news_058",
+      "input": "学者分析人口结构变化。",
+      "expected": "學者分析人口結構變化。",
+      "tags": [
+        "news",
+        "society"
+      ],
+      "notes": "学者→學者，结构→結構"
+    },
+    {
+      "id": "news_059",
+      "input": "能源局推动离岸风电开发。",
+      "expected": "能源局推動離岸風電開發。",
+      "tags": [
+        "news",
+        "energy"
+      ],
+      "notes": "推动→推動，风电→風電"
+    },
+    {
+      "id": "news_060",
+      "input": "调查报告指出服务质量仍需改善。",
+      "expected": "調查報告指出服務品質仍需改善。",
+      "tags": [
+        "news",
+        "public"
+      ],
+      "notes": "服务质量→服務品質，调查→調查"
+    }
+  ]
+}

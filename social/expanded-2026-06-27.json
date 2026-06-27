@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "source": "人工校驗擴充樣本",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-06-27",
+    "description": "social 類精選語料擴充到 60 筆的一部分"
+  },
+  "corpus": [
+    {
+      "id": "social_021",
+      "input": "这周到店领取赠品。",
+      "expected": "這週到店領取贈品。",
+      "tags": [
+        "daily",
+        "shopping"
+      ],
+      "notes": "这周到店→這週到店"
+    },
+    {
+      "id": "social_022",
+      "input": "这周到的服务真的很细心。",
+      "expected": "這周到的服務真的很細心。",
+      "tags": [
+        "daily",
+        "service"
+      ],
+      "notes": "周到保持周到"
+    },
+    {
+      "id": "social_023",
+      "input": "每周到健身房三次。",
+      "expected": "每週到健身房三次。",
+      "tags": [
+        "daily",
+        "fitness"
+      ],
+      "notes": "每周到→每週到"
+    },
+    {
+      "id": "social_024",
+      "input": "下周到台中找朋友。",
+      "expected": "下週到臺中找朋友。",
+      "tags": [
+        "daily",
+        "travel"
+      ],
+      "notes": "下周到→下週到"
+    },
+    {
+      "id": "social_025",
+      "input": "刚刚看到一个超好笑的视频。",
+      "expected": "剛剛看到一個超好笑的影片。",
+      "tags": [
+        "daily",
+        "media"
+      ],
+      "notes": "视频→影片"
+    },
+    {
+      "id": "social_026",
+      "input": "这个账号终于恢复了。",
+      "expected": "這個帳號終於恢復了。",
+      "tags": [
+        "daily",
+        "account"
+      ],
+      "notes": "账号→帳號，恢复保持恢復"
+    },
+    {
+      "id": "social_027",
+      "input": "我把文件上传到群组了。",
+      "expected": "我把文件上傳到群組了。",
+      "tags": [
+        "daily",
+        "file"
+      ],
+      "notes": "上传→上傳，群组→群組"
+    },
+    {
+      "id": "social_028",
+      "input": "老板今天远程开会。",
+      "expected": "老闆今天遠端開會。",
+      "tags": [
+        "daily",
+        "work"
+      ],
+      "notes": "老板→老闆，远程→遠端"
+    },
+    {
+      "id": "social_029",
+      "input": "手机屏幕突然变暗。",
+      "expected": "手機螢幕突然變暗。",
+      "tags": [
+        "daily",
+        "device"
+      ],
+      "notes": "手机→手機，屏幕→螢幕"
+    },
+    {
+      "id": "social_030",
+      "input": "这个链接可以直接打开。",
+      "expected": "這個連結可以直接打開。",
+      "tags": [
+        "daily",
+        "web"
+      ],
+      "notes": "链接→連結，打开→打開"
+    },
+    {
+      "id": "social_031",
+      "input": "留言区有人分享攻略。",
+      "expected": "留言區有人分享攻略。",
+      "tags": [
+        "daily",
+        "social"
+      ],
+      "notes": "留言区→留言區，分享→分享"
+    },
+    {
+      "id": "social_032",
+      "input": "今天早餐吃馒头和豆浆。",
+      "expected": "今天早餐吃饅頭和豆漿。",
+      "tags": [
+        "daily",
+        "food"
+      ],
+      "notes": "馒头→饅頭，豆浆→豆漿"
+    },
+    {
+      "id": "social_033",
+      "input": "这家店支持电子支付。",
+      "expected": "這家店支持電子付款。",
+      "tags": [
+        "daily",
+        "payment"
+      ],
+      "notes": "支持保持支持，电子→電子"
+    },
+    {
+      "id": "social_034",
+      "input": "默认铃声听起来很普通。",
+      "expected": "默認鈴聲聽起來很普通。",
+      "tags": [
+        "daily",
+        "device"
+      ],
+      "notes": "默认铃声→預設鈴聲"
+    },
+    {
+      "id": "social_035",
+      "input": "请先刷新页面再试一次。",
+      "expected": "請先重新整理頁面再試一次。",
+      "tags": [
+        "daily",
+        "ui"
+      ],
+      "notes": "刷新页面→重新整理頁面"
+    },
+    {
+      "id": "social_036",
+      "input": "照片质量比昨天好很多。",
+      "expected": "照片質量比昨天好很多。",
+      "tags": [
+        "daily",
+        "media"
+      ],
+      "notes": "质量在照片語境保持質量"
+    },
+    {
+      "id": "social_037",
+      "input": "服务质量真的有改善。",
+      "expected": "服務品質真的有改善。",
+      "tags": [
+        "daily",
+        "service"
+      ],
+      "notes": "服务质量→服務品質"
+    },
+    {
+      "id": "social_038",
+      "input": "我已经通过链接报名了。",
+      "expected": "我已經透過連結報名了。",
+      "tags": [
+        "daily",
+        "web"
+      ],
+      "notes": "通过链接→透過連結"
+    },
+    {
+      "id": "social_039",
+      "input": "这个贴纸包也太可爱了。",
+      "expected": "這個貼紙包也太可愛了。",
+      "tags": [
+        "daily",
+        "social"
+      ],
+      "notes": "贴纸→貼紙"
+    },
+    {
+      "id": "social_040",
+      "input": "今天骑自行车去河边。",
+      "expected": "今天騎腳踏車去河邊。",
+      "tags": [
+        "daily",
+        "transport"
+      ],
+      "notes": "自行车→腳踏車"
+    },
+    {
+      "id": "social_041",
+      "input": "朋友发消息说他晚点到。",
+      "expected": "朋友傳訊息說他晚點到。",
+      "tags": [
+        "daily",
+        "chat"
+      ],
+      "notes": "发消息→傳訊息"
+    },
+    {
+      "id": "social_042",
+      "input": "我把应用更新到最新版。",
+      "expected": "我把應用更新到最新版。",
+      "tags": [
+        "daily",
+        "app"
+      ],
+      "notes": "应用→應用程式，更新保持"
+    },
+    {
+      "id": "social_043",
+      "input": "这个菜单选项藏太深。",
+      "expected": "這個選單選項藏太深。",
+      "tags": [
+        "daily",
+        "ui"
+      ],
+      "notes": "菜单→選單，选项→選項"
+    },
+    {
+      "id": "social_044",
+      "input": "请帮我保存这张照片。",
+      "expected": "請幫我保存這張照片。",
+      "tags": [
+        "daily",
+        "media"
+      ],
+      "notes": "保存照片保持保存"
+    },
+    {
+      "id": "social_045",
+      "input": "保存文件之后记得备份。",
+      "expected": "儲存檔案之後記得備份。",
+      "tags": [
+        "daily",
+        "file"
+      ],
+      "notes": "保存文件→儲存檔案"
+    },
+    {
+      "id": "social_046",
+      "input": "这个直播画质很稳定。",
+      "expected": "這個直播畫質很穩定。",
+      "tags": [
+        "daily",
+        "media"
+      ],
+      "notes": "画质→畫質，稳定→穩定"
+    },
+    {
+      "id": "social_047",
+      "input": "下雨天骑车真的很危险。",
+      "expected": "下雨天騎車真的很危險。",
+      "tags": [
+        "daily",
+        "weather"
+      ],
+      "notes": "骑车→騎車，危险→危險"
+    },
+    {
+      "id": "social_048",
+      "input": "周末要不要去看电影？",
+      "expected": "週末要不要去看電影？",
+      "tags": [
+        "daily",
+        "entertainment"
+      ],
+      "notes": "周末→週末，电影→電影"
+    },
+    {
+      "id": "social_049",
+      "input": "这个按钮按下去没有反应。",
+      "expected": "這個按鈕按下去沒有反應。",
+      "tags": [
+        "daily",
+        "ui"
+      ],
+      "notes": "按钮→按鈕，反应→反應"
+    },
+    {
+      "id": "social_050",
+      "input": "我忘记注销旧账号。",
+      "expected": "我忘記註銷舊帳號。",
+      "tags": [
+        "daily",
+        "account"
+      ],
+      "notes": "注销账号→登出帳號"
+    },
+    {
+      "id": "social_051",
+      "input": "这篇文章我先收藏起来。",
+      "expected": "這篇文章我先收藏起來。",
+      "tags": [
+        "daily",
+        "reading"
+      ],
+      "notes": "收藏動詞保持"
+    },
+    {
+      "id": "social_052",
+      "input": "收藏夹里面好多旧链接。",
+      "expected": "我的最愛裡面好多舊連結。",
+      "tags": [
+        "daily",
+        "browser"
+      ],
+      "notes": "收藏夹→我的最愛，链接→連結"
+    },
+    {
+      "id": "social_053",
+      "input": "今天空气质量不太好。",
+      "expected": "今天空氣質量不太好。",
+      "tags": [
+        "daily",
+        "environment"
+      ],
+      "notes": "空气→空氣，质量保持質量"
+    },
+    {
+      "id": "social_054",
+      "input": "这个表情包我笑到不行。",
+      "expected": "這個貼圖包我笑到不行。",
+      "tags": [
+        "daily",
+        "social"
+      ],
+      "notes": "表情包→貼圖包"
+    },
+    {
+      "id": "social_055",
+      "input": "请把密码设置得复杂一点。",
+      "expected": "請把密碼設定得複雜一點。",
+      "tags": [
+        "daily",
+        "security"
+      ],
+      "notes": "密码→密碼，设置→設定"
+    },
+    {
+      "id": "social_056",
+      "input": "我用云端硬盘备份照片。",
+      "expected": "我用雲端硬碟備份照片。",
+      "tags": [
+        "daily",
+        "cloud"
+      ],
+      "notes": "云端硬盘→雲端硬碟"
+    },
+    {
+      "id": "social_057",
+      "input": "默认头像看起来有点怪。",
+      "expected": "預設頭像看起來有點怪。",
+      "tags": [
+        "daily",
+        "ui"
+      ],
+      "notes": "默认头像→預設頭像"
+    },
+    {
+      "id": "social_058",
+      "input": "这个频道更新速度很快。",
+      "expected": "這個頻道更新速度很快。",
+      "tags": [
+        "daily",
+        "media"
+      ],
+      "notes": "频道→頻道，速度→速度"
+    },
+    {
+      "id": "social_059",
+      "input": "刚才网络突然断线。",
+      "expected": "剛才網路突然斷線。",
+      "tags": [
+        "daily",
+        "network"
+      ],
+      "notes": "网络→網路，断线→斷線"
+    },
+    {
+      "id": "social_060",
+      "input": "请联系管理员帮忙处理。",
+      "expected": "請聯絡管理員幫忙處理。",
+      "tags": [
+        "daily",
+        "support"
+      ],
+      "notes": "联系管理员→聯絡管理員"
+    }
+  ]
+}

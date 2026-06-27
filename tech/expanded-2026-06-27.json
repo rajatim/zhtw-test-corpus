@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "source": "人工校驗擴充樣本",
+    "source_url": "原創/模擬",
+    "license": "CC-BY-4.0",
+    "collected_date": "2026-06-27",
+    "description": "tech 類精選語料擴充到 60 筆的一部分"
+  },
+  "corpus": [
+    {
+      "id": "tech_021",
+      "input": "持续集成流水线已经通过。",
+      "expected": "持續整合管線已經通過。",
+      "tags": [
+        "ci",
+        "pipeline"
+      ],
+      "notes": "持续集成流水线→持續整合管線"
+    },
+    {
+      "id": "tech_022",
+      "input": "请更新依赖并重新构建项目。",
+      "expected": "請更新相依套件並重新建置專案。",
+      "tags": [
+        "build",
+        "dependency"
+      ],
+      "notes": "更新依赖→更新相依套件，项目→專案"
+    },
+    {
+      "id": "tech_023",
+      "input": "已经通过 API 上传文件。",
+      "expected": "已經透過 API 上傳檔案。",
+      "tags": [
+        "api",
+        "upload"
+      ],
+      "notes": "通过 API→透過 API"
+    },
+    {
+      "id": "tech_024",
+      "input": "后端服务回传 JSON 响应。",
+      "expected": "後端服務回傳 JSON 回應。",
+      "tags": [
+        "backend",
+        "api"
+      ],
+      "notes": "响应→回應，回传保持"
+    },
+    {
+      "id": "tech_025",
+      "input": "请在终端执行安装命令。",
+      "expected": "請在終端機執行安裝命令。",
+      "tags": [
+        "cli"
+      ],
+      "notes": "终端→終端，安装→安裝"
+    },
+    {
+      "id": "tech_026",
+      "input": "这个函数会抛出异常。",
+      "expected": "這個函式會拋出例外。",
+      "tags": [
+        "programming"
+      ],
+      "notes": "函数→函式，异常→例外"
+    },
+    {
+      "id": "tech_027",
+      "input": "对象序列化后写入缓存。",
+      "expected": "對象序列化後寫入快取。",
+      "tags": [
+        "programming",
+        "cache"
+      ],
+      "notes": "对象→物件，缓存→快取"
+    },
+    {
+      "id": "tech_028",
+      "input": "前端路由需要处理登录状态。",
+      "expected": "前端路由需要處理登入狀態。",
+      "tags": [
+        "frontend",
+        "auth"
+      ],
+      "notes": "登录状态→登入狀態"
+    },
+    {
+      "id": "tech_029",
+      "input": "数据库连接池已经耗尽。",
+      "expected": "資料庫連線池已經耗盡。",
+      "tags": [
+        "database"
+      ],
+      "notes": "数据库→資料庫，连接池→連線池"
+    },
+    {
+      "id": "tech_030",
+      "input": "请检查索引是否用于查询。",
+      "expected": "請檢查索引是否用於查詢。",
+      "tags": [
+        "database"
+      ],
+      "notes": "索引用于→索引用於"
+    },
+    {
+      "id": "tech_031",
+      "input": "容器镜像需要重新构建。",
+      "expected": "容器映像檔需要重新建置。",
+      "tags": [
+        "container",
+        "build"
+      ],
+      "notes": "镜像→映像，构建→建置"
+    },
+    {
+      "id": "tech_032",
+      "input": "部署流水线失败后请查看日志。",
+      "expected": "部署管線失敗後請查看日誌。",
+      "tags": [
+        "deploy",
+        "logging"
+      ],
+      "notes": "流水线→管線，日志→日誌"
+    },
+    {
+      "id": "tech_033",
+      "input": "这个字段允许为空字符串。",
+      "expected": "這個欄位允許為空字元串。",
+      "tags": [
+        "api",
+        "schema"
+      ],
+      "notes": "字段→欄位，字符串→字串"
+    },
+    {
+      "id": "tech_034",
+      "input": "用户端会保存会话令牌。",
+      "expected": "使用者端會保存會話權杖。",
+      "tags": [
+        "client",
+        "auth"
+      ],
+      "notes": "用户端→用戶端，会话→工作階段"
+    },
+    {
+      "id": "tech_035",
+      "input": "消息队列处理异步任务。",
+      "expected": "訊息佇列處理非同步任務。",
+      "tags": [
+        "queue",
+        "async"
+      ],
+      "notes": "队列→佇列，异步→非同步"
+    },
+    {
+      "id": "tech_036",
+      "input": "请用配置文件覆盖默认参数。",
+      "expected": "請用設定檔覆蓋預設參數。",
+      "tags": [
+        "configuration"
+      ],
+      "notes": "配置文件→設定檔，默认参数→預設參數"
+    },
+    {
+      "id": "tech_037",
+      "input": "命令行参数支持短选项。",
+      "expected": "命令列參數支持短選項。",
+      "tags": [
+        "cli"
+      ],
+      "notes": "命令行→命令列，选项→選項"
+    },
+    {
+      "id": "tech_038",
+      "input": "单元测试需要模拟网络请求。",
+      "expected": "單元測試需要模擬網路請求。",
+      "tags": [
+        "testing",
+        "network"
+      ],
+      "notes": "单元测试→單元測試，网络→網路"
+    },
+    {
+      "id": "tech_039",
+      "input": "这个接口返回状态码和响应头。",
+      "expected": "這個介面回傳狀態碼和回應標頭。",
+      "tags": [
+        "api",
+        "http"
+      ],
+      "notes": "返回状态码→回傳狀態碼，响应头→回應標頭"
+    },
+    {
+      "id": "tech_040",
+      "input": "权限验证失败时返回错误信息。",
+      "expected": "權限驗證失敗時返回錯誤資訊。",
+      "tags": [
+        "auth",
+        "api"
+      ],
+      "notes": "权限→權限，信息→資訊"
+    },
+    {
+      "id": "tech_041",
+      "input": "脚本会清理临时文件。",
+      "expected": "指令碼會清理暫存檔。",
+      "tags": [
+        "script",
+        "file"
+      ],
+      "notes": "脚本→指令碼，文件依策略轉文件/檔案"
+    },
+    {
+      "id": "tech_042",
+      "input": "请检查环境变量是否设置正确。",
+      "expected": "請檢查環境變數是否設定正確。",
+      "tags": [
+        "configuration"
+      ],
+      "notes": "环境变量→環境變數，设置→設定"
+    },
+    {
+      "id": "tech_043",
+      "input": "服务器证书将在明天过期。",
+      "expected": "伺服器憑證將在明天過期。",
+      "tags": [
+        "security",
+        "server"
+      ],
+      "notes": "服务器→伺服器，证书→憑證"
+    },
+    {
+      "id": "tech_044",
+      "input": "这个组件会监听滚动事件。",
+      "expected": "這個元件會監聽滾動事件。",
+      "tags": [
+        "frontend",
+        "ui"
+      ],
+      "notes": "组件→元件，事件→事件"
+    },
+    {
+      "id": "tech_045",
+      "input": "浏览器控制台显示警告。",
+      "expected": "瀏覽器控制台顯示警告。",
+      "tags": [
+        "browser",
+        "debugging"
+      ],
+      "notes": "浏览器→瀏覽器，控制台→主控台"
+    },
+    {
+      "id": "tech_046",
+      "input": "请在分支合并前解决冲突。",
+      "expected": "請在分支合併前解決衝突。",
+      "tags": [
+        "git"
+      ],
+      "notes": "合并→合併，冲突→衝突"
+    },
+    {
+      "id": "tech_047",
+      "input": "版本号需要和标签保持一致。",
+      "expected": "版本號需要和標籤保持一致。",
+      "tags": [
+        "release"
+      ],
+      "notes": "版本号→版本號，标签→標籤"
+    },
+    {
+      "id": "tech_048",
+      "input": "应用程序启动后会读取配置。",
+      "expected": "應用程式啟動後會讀取配置。",
+      "tags": [
+        "app",
+        "configuration"
+      ],
+      "notes": "应用程序→應用程式，配置→設定"
+    },
+    {
+      "id": "tech_049",
+      "input": "日志等级可以通过参数调整。",
+      "expected": "日誌等級可以透過參數調整。",
+      "tags": [
+        "logging",
+        "cli"
+      ],
+      "notes": "通过参数→透過參數，调整→調整"
+    },
+    {
+      "id": "tech_050",
+      "input": "这个模块负责数据同步。",
+      "expected": "這個模組負責資料同步。",
+      "tags": [
+        "architecture",
+        "data"
+      ],
+      "notes": "模块→模組，数据→資料"
+    },
+    {
+      "id": "tech_051",
+      "input": "请确认网络接口是否启用。",
+      "expected": "請確認網路介面是否啟用。",
+      "tags": [
+        "network"
+      ],
+      "notes": "网络接口→網路介面，启用→啟用"
+    },
+    {
+      "id": "tech_052",
+      "input": "缓存失效会导致响应变慢。",
+      "expected": "快取失效會導致回應變慢。",
+      "tags": [
+        "cache",
+        "performance"
+      ],
+      "notes": "缓存→快取，响应→回應"
+    },
+    {
+      "id": "tech_053",
+      "input": "这个算法使用递归遍历树结构。",
+      "expected": "這個演算法使用遞迴遍歷樹結構。",
+      "tags": [
+        "algorithm"
+      ],
+      "notes": "算法→演算法，递归→遞迴"
+    },
+    {
+      "id": "tech_054",
+      "input": "持续部署会自动发布新版本。",
+      "expected": "持續部署會自動發布新版本。",
+      "tags": [
+        "deploy",
+        "release"
+      ],
+      "notes": "持续部署→持續部署，发布→發布"
+    },
+    {
+      "id": "tech_055",
+      "input": "请不要在日志中记录密码。",
+      "expected": "請不要在日誌中記錄密碼。",
+      "tags": [
+        "security",
+        "logging"
+      ],
+      "notes": "日志→日誌，记录→記錄"
+    },
+    {
+      "id": "tech_056",
+      "input": "文件名包含非法字符。",
+      "expected": "檔名包含非法字元。",
+      "tags": [
+        "file"
+      ],
+      "notes": "文件名→檔名，字符→字元"
+    },
+    {
+      "id": "tech_057",
+      "input": "数据库事务需要回滚。",
+      "expected": "資料庫交易需要回滾。",
+      "tags": [
+        "database"
+      ],
+      "notes": "事务→交易，回滚→回復"
+    },
+    {
+      "id": "tech_058",
+      "input": "API 网关会限制请求频率。",
+      "expected": "API 閘道會限制請求頻率。",
+      "tags": [
+        "api",
+        "gateway"
+      ],
+      "notes": "请求频率→請求頻率"
+    },
+    {
+      "id": "tech_059",
+      "input": "请把补丁合并到主分支。",
+      "expected": "請把修補程式合併到主分支。",
+      "tags": [
+        "git",
+        "patch"
+      ],
+      "notes": "补丁→修補程式，主分支→主分支"
+    },
+    {
+      "id": "tech_060",
+      "input": "程序退出前会释放资源。",
+      "expected": "程序退出前會釋放資源。",
+      "tags": [
+        "programming"
+      ],
+      "notes": "程序→程式，资源→資源"
+    }
+  ]
+}
