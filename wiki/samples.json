@@ -27,6 +27,55 @@
       "expected": "雪梨歌劇院是澳大利亞的著名地標。",
       "tags": ["geography", "landmark"],
       "notes": "悉尼→雪梨, 剧→劇, 标→標"
+    },
+    {
+      "id": "wiki_004",
+      "input": "巴黎是法国的首都。",
+      "expected": "巴黎是法國的首都。",
+      "tags": ["geography", "city"],
+      "notes": "法国→法國"
+    },
+    {
+      "id": "wiki_005",
+      "input": "数据库系统用于存储和管理数据。",
+      "expected": "資料庫系統用於儲存和管理資料。",
+      "tags": ["science", "computing"],
+      "notes": "数据库→資料庫, 存储→儲存, 数据→資料"
+    },
+    {
+      "id": "wiki_006",
+      "input": "基因编辑技术引发伦理讨论。",
+      "expected": "基因編輯技術引發倫理討論。",
+      "tags": ["science", "biology"],
+      "notes": "编辑→編輯, 伦理→倫理, 讨论→討論"
+    },
+    {
+      "id": "wiki_007",
+      "input": "火星是太阳系的第四颗行星。",
+      "expected": "火星是太陽系的第四顆行星。",
+      "tags": ["science", "astronomy"],
+      "notes": "太阳系→太陽系, 颗→顆"
+    },
+    {
+      "id": "wiki_008",
+      "input": "机器学习是人工智能的重要领域。",
+      "expected": "機器學習是人工智慧的重要領域。",
+      "tags": ["science", "ai"],
+      "notes": "机器学习→機器學習, 人工智能→人工智慧, 领域→領域"
+    },
+    {
+      "id": "wiki_009",
+      "input": "悉尼位于澳大利亚东南部。",
+      "expected": "雪梨位於澳大利亞東南部。",
+      "tags": ["geography", "city"],
+      "notes": "悉尼→雪梨, 位于→位於, 澳大利亚→澳大利亞"
+    },
+    {
+      "id": "wiki_010",
+      "input": "互联网协议定义了数据传输规则。",
+      "expected": "網際網路協定定義了資料傳輸規則。",
+      "tags": ["science", "computing"],
+      "notes": "互联网协议→網際網路協定, 数据→資料, 传输→傳輸, 规则→規則"
     }
   ]
 }

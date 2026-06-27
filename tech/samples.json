@@ -41,6 +41,41 @@
       "expected": "資料庫的查詢效能需要最佳化。",
       "tags": ["database", "performance"],
       "notes": "数据库→資料庫, 性能→效能, 优化→最佳化"
+    },
+    {
+      "id": "tech_006",
+      "input": "请在配置文件中设置默认值。",
+      "expected": "請在設定檔中設定預設值。",
+      "tags": ["configuration", "ui"],
+      "notes": "配置文件→設定檔, 设置→設定, 默认值→預設值"
+    },
+    {
+      "id": "tech_007",
+      "input": "这个接口返回一个布尔类型的字段。",
+      "expected": "這個介面回傳一個布林類型的欄位。",
+      "tags": ["programming", "api"],
+      "notes": "接口返回→介面回傳, 布尔→布林, 字段→欄位"
+    },
+    {
+      "id": "tech_008",
+      "input": "服务器需要安装安全补丁。",
+      "expected": "伺服器需要安裝安全修補程式。",
+      "tags": ["security", "server"],
+      "notes": "服务器→伺服器, 安装→安裝, 补丁→修補程式"
+    },
+    {
+      "id": "tech_009",
+      "input": "缓存命中率会影响响应时间。",
+      "expected": "快取命中率會影響回應時間。",
+      "tags": ["performance", "cache"],
+      "notes": "缓存→快取, 响应时间→回應時間"
+    },
+    {
+      "id": "tech_010",
+      "input": "日志文件记录错误信息。",
+      "expected": "日誌文件記錄錯誤資訊。",
+      "tags": ["logging", "debugging"],
+      "notes": "日志→日誌, 记录→記錄, 错误→錯誤, 信息→資訊"
     }
   ]
 }

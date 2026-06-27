@@ -27,6 +27,55 @@
       "expected": "該專案將於明年完成後投入使用。",
       "tags": ["news", "project"],
       "notes": "项目→專案, 完成后→完成後"
+    },
+    {
+      "id": "news_004",
+      "input": "警方表示，嫌疑人已经被逮捕。",
+      "expected": "警方表示，嫌疑人已經被逮捕。",
+      "tags": ["news", "law"],
+      "notes": "已经→已經, 逮捕保持正式用語"
+    },
+    {
+      "id": "news_005",
+      "input": "央行维持利率不变，市场反应平稳。",
+      "expected": "央行維持利率不變，市場反應平穩。",
+      "tags": ["news", "finance"],
+      "notes": "维持→維持, 市场→市場, 反应→反應, 平稳→平穩"
+    },
+    {
+      "id": "news_006",
+      "input": "受台风影响，多趟列车停驶。",
+      "expected": "受颱風影響，多趟列車停駛。",
+      "tags": ["news", "weather", "transport"],
+      "notes": "台风→颱風, 停驶→停駛"
+    },
+    {
+      "id": "news_007",
+      "input": "新的数据中心将在下半年启用。",
+      "expected": "新的資料中心將在下半年啟用。",
+      "tags": ["news", "it"],
+      "notes": "数据中心→資料中心, 启用→啟用"
+    },
+    {
+      "id": "news_008",
+      "input": "政府呼吁民众节约用水。",
+      "expected": "政府呼籲民眾節約用水。",
+      "tags": ["news", "public"],
+      "notes": "呼吁→呼籲, 民众→民眾, 节约→節約"
+    },
+    {
+      "id": "news_009",
+      "input": "该公司裁员计划已经启动。",
+      "expected": "該公司裁員計畫已經啟動。",
+      "tags": ["news", "business"],
+      "notes": "该→該, 计划→計畫, 已经→已經, 启动→啟動"
+    },
+    {
+      "id": "news_010",
+      "input": "会议期间将讨论预算案。",
+      "expected": "會議期間將討論預算案。",
+      "tags": ["news", "politics"],
+      "notes": "会议→會議, 讨论→討論"
     }
   ]
 }

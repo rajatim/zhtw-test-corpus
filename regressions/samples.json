@@ -41,6 +41,41 @@
       "expected": "隨身碟和隨身碟",
       "tags": ["synonym", "usb"],
       "notes": "优盘和U盘都應轉為隨身碟"
+    },
+    {
+      "id": "regression_006",
+      "input": "权限设置请联系管理员",
+      "expected": "權限設定請聯絡管理員",
+      "tags": ["idempotency", "it"],
+      "notes": "权限→權限, 设置→設定, 联系→聯絡"
+    },
+    {
+      "id": "regression_007",
+      "input": "巧克力蛋糕很好吃",
+      "expected": "巧克力蛋糕很好吃",
+      "tags": ["over-conversion", "克"],
+      "notes": "巧克力的克不應轉為公克"
+    },
+    {
+      "id": "regression_008",
+      "input": "天后宫香火鼎盛",
+      "expected": "天后宮香火鼎盛",
+      "tags": ["identity-mapping", "后"],
+      "notes": "天后宮的后不應轉為後"
+    },
+    {
+      "id": "regression_009",
+      "input": "刷新页面后再登录",
+      "expected": "重新整理頁面後再登入",
+      "tags": ["ui", "login"],
+      "notes": "刷新页面→重新整理頁面, 后→後, 登录→登入"
+    },
+    {
+      "id": "regression_010",
+      "input": "注册后请注销当前账户",
+      "expected": "註冊後請登出目前帳戶",
+      "tags": ["ui", "login"],
+      "notes": "注册→註冊, 后→後, 注销当前账户→登出目前帳戶"
     }
   ]
 }

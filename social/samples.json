@@ -41,6 +41,41 @@
       "expected": "儘量別熬夜，對身體不好。",
       "tags": ["daily", "health"],
       "notes": "尽量→儘量（儘不是盡）"
+    },
+    {
+      "id": "social_006",
+      "input": "这个软件真的很好用，点赞。",
+      "expected": "這個軟體真的很好用，按讚。",
+      "tags": ["daily", "it"],
+      "notes": "软件→軟體, 点赞→按讚"
+    },
+    {
+      "id": "social_007",
+      "input": "我把照片上传到云端了。",
+      "expected": "我把照片上傳到雲端了。",
+      "tags": ["daily", "cloud"],
+      "notes": "上传→上傳, 云端→雲端"
+    },
+    {
+      "id": "social_008",
+      "input": "这个视频太高清了。",
+      "expected": "這個影片太高畫質了。",
+      "tags": ["daily", "media"],
+      "notes": "视频→影片, 高清→高畫質"
+    },
+    {
+      "id": "social_009",
+      "input": "今天风很大，骑车要小心。",
+      "expected": "今天風很大，騎車要小心。",
+      "tags": ["daily", "weather"],
+      "notes": "风→風, 骑车→騎車"
+    },
+    {
+      "id": "social_010",
+      "input": "默认头像太丑了。",
+      "expected": "預設頭像太醜了。",
+      "tags": ["daily", "ui"],
+      "notes": "默认头像→預設頭像, 丑→醜"
     }
   ]
 }
