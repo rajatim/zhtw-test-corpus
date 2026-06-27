@@ -136,7 +136,7 @@
     {
       "id": "tech_034",
       "input": "用户端会保存会话令牌。",
-      "expected": "使用者端會保存會話權杖。",
+      "expected": "用戶端會保存會話權杖。",
       "tags": [
         "client",
         "auth"
@@ -243,7 +243,7 @@
     {
       "id": "tech_045",
       "input": "浏览器控制台显示警告。",
-      "expected": "瀏覽器控制台顯示警告。",
+      "expected": "瀏覽器主控台顯示警告。",
       "tags": [
         "browser",
         "debugging"
@@ -387,7 +387,7 @@
     {
       "id": "tech_060",
       "input": "程序退出前会释放资源。",
-      "expected": "程序退出前會釋放資源。",
+      "expected": "程式退出前會釋放資源。",
       "tags": [
         "programming"
       ],

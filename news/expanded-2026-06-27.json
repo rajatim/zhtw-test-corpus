@@ -281,7 +281,7 @@
     {
       "id": "news_048",
       "input": "公司董事会通过现金增资案。",
-      "expected": "公司董事會透過現金增資案。",
+      "expected": "公司董事會通過現金增資案。",
       "tags": [
         "news",
         "business"
