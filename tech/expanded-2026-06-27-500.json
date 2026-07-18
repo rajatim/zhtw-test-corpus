@@ -12,7 +12,7 @@
     { "id": "tech_063", "input": "数据库连接失败时会重试。", "expected": "資料庫連線失敗時會重試。", "tags": ["database"], "notes": "连接→連線" },
     { "id": "tech_064", "input": "缓存键包含用户编号。", "expected": "快取鍵包含使用者編號。", "tags": ["cache"], "notes": "缓存→快取，用户→使用者" },
     { "id": "tech_065", "input": "前端组件监听点击事件。", "expected": "前端元件監聽點擊事件。", "tags": ["frontend"], "notes": "组件→元件" },
-    { "id": "tech_066", "input": "后端服务写入日志文件。", "expected": "後端服務寫入日誌文件。", "tags": ["backend", "logging"], "notes": "日志→日誌" },
+    { "id": "tech_066", "input": "后端服务写入日志文件。", "expected": "後端服務寫入記錄檔。", "tags": ["backend", "logging"], "notes": "日志文件→記錄檔" },
     { "id": "tech_067", "input": "异步任务队列已经排空。", "expected": "非同步任務佇列已經排空。", "tags": ["async", "queue"], "notes": "异步→非同步，队列→佇列" },
     { "id": "tech_068", "input": "单元测试会模拟异常情况。", "expected": "單元測試會模擬例外情況。", "tags": ["testing"], "notes": "异常→例外" },
     { "id": "tech_069", "input": "请重新构建项目并发布版本。", "expected": "請重新建置專案並發布版本。", "tags": ["build", "release"], "notes": "重新构建项目→重新建置專案" },

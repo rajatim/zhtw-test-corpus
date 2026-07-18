@@ -130,17 +130,17 @@
     {
       "id": "social_033",
       "input": "这家店支持电子支付。",
-      "expected": "這家店支持電子付款。",
+      "expected": "這家店支援電子付款。",
       "tags": [
         "daily",
         "payment"
       ],
-      "notes": "支持保持支持，电子→電子"
+      "notes": "能力語境支持→支援，电子支付→電子付款"
     },
     {
       "id": "social_034",
       "input": "默认铃声听起来很普通。",
-      "expected": "默認鈴聲聽起來很普通。",
+      "expected": "預設鈴聲聽起來很普通。",
       "tags": [
         "daily",
         "device"
@@ -160,12 +160,12 @@
     {
       "id": "social_036",
       "input": "照片质量比昨天好很多。",
-      "expected": "照片質量比昨天好很多。",
+      "expected": "照片品質比昨天好很多。",
       "tags": [
         "daily",
         "media"
       ],
-      "notes": "质量在照片語境保持質量"
+      "notes": "照片語境质量→品質"
     },
     {
       "id": "social_037",
@@ -330,12 +330,12 @@
     {
       "id": "social_053",
       "input": "今天空气质量不太好。",
-      "expected": "今天空氣質量不太好。",
+      "expected": "今天空氣品質不太好。",
       "tags": [
         "daily",
         "environment"
       ],
-      "notes": "空气→空氣，质量保持質量"
+      "notes": "空气质量→空氣品質"
     },
     {
       "id": "social_054",
