@@ -1,6 +1,6 @@
 # zhtw-test-corpus - Agent 開發指南
 
-> **AI 指令來源是 `AGENTS.md`** — Codex 原生讀取(無 import)。`CLAUDE.md` / `GEMINI.md` 是 `@AGENTS.md` 包裝。
+> **AI 指令來源是 `AGENTS.md`** — Codex 透過官方 AGENTS 探索機制原生讀取；其官方指令文件未定義 Markdown `@file` import。`CLAUDE.md` / `GEMINI.md` 是 `@AGENTS.md` 包裝。
 
 ## 重要警告
 
@@ -53,48 +53,8 @@ python3 -m json.tool news/samples.json > /dev/null && echo "Valid JSON"
 
 ---
 
-## 📋 進度紀錄（2026-01-03）
+## Status
 
-### ✅ 已完成
+歷史進度與後續工作保留在 [`STATUS.md`](STATUS.md)。
 
-1. **Repo 建立**
-   - 建立 zhtw-test-corpus 獨立 repo
-   - 精選樣本：news/, tech/, social/, wiki/, regressions/
-   - README.md, CLAUDE.md, LICENSE, .gitignore
-
-2. **下載腳本** (`scripts/download_corpus.py`)
-   - 支援 5 種語料：wiki, news, webtext, baike, translation
-   - 從 Google Drive 下載並解壓
-   - 已測試 wiki (519MB) 下載成功
-
-3. **抽樣腳本** (`scripts/sample_corpus.py`)
-   - 從大型語料庫隨機抽樣
-   - 支援 `--use-zhtw` 自動生成預期輸出
-   - 已修正 wiki 檔案格式偵測（wiki_00 格式）
-
-### 🔄 待處理
-
-1. **人工校驗**
-   - `samples/wiki/sampled.json` 已產生 20 條
-   - 需人工確認 expected 欄位是否正確
-   - 校驗後移至 `wiki/verified.json`
-
-2. **其他語料**
-   - 可選下載：news (3.6GB), webtext (1.7GB), baike (663MB)
-   - 執行：`python scripts/download_corpus.py --dataset news`
-
-3. **整合到 zhtw 測試**
-   - 在 zhtw 專案建立 `tests/test_corpus.py`
-   - 讀取此 repo 的語料執行批次驗證
-
-### 📝 下次可以做
-
-```bash
-# 下載更多語料
-python scripts/download_corpus.py --dataset news
-
-# 抽樣並用 zhtw 生成預期
-python scripts/sample_corpus.py --count 50 --use-zhtw
-
-# 人工校驗 samples/ 目錄下的檔案
-```
+*AI instructions reviewed: 2026-08-04*
