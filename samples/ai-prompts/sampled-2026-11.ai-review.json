@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "corpus_file": "sampled-2026-11.json",
+    "date": "2026-11-24",
+    "codex": "gpt-6-astra, reasoning xhigh, read-only, first pass with zhtw output shown",
+    "gemini": "gemini-4-neon-high via agy, blind: input and rules only",
+    "rules": "Annotation rules (zhtw Taiwan Traditional Chinese conversion):\n\n1. Convert the Simplified Chinese `input` into the Traditional Chinese that a Taiwan writer would use\n   in the same context (IT, chat, study, or general writing).\n2. Golden rule: \"寧可少轉，不要錯轉\" (better to change too little than to change wrongly).\n   Change a word only when Taiwan usage clearly differs in this exact context. Keep words that are\n   also normal in Taiwan in this context (for example 保存 for preserving relics, 程序 for a\n   procedure, 實現 for \"achieve a goal\").\n3. Keep Latin text, numbers, spacing, tabs, and punctuation exactly as in the input. Do not add or\n   remove spaces. Keep the input's quote marks.\n4. Do not fix typos, grammar, or style in the input. Only convert script and regional terms.\n5. For each case return: id, expected (one best answer), acceptable (other answers that are also\n   correct; may be empty), confidence (high / medium / low), notes (which terms changed and why,\n   short).\n",
+    "comparison": "mechanical comparison of expected and acceptable sets",
+    "status_counts": {
+      "preference-differs": 8,
+      "zhtw-ok-agreed": 3,
+      "needs-decision": 3,
+      "zhtw-gap-agreed": 11
+    }
+  },
+  "cases": [
+    {
+      "id": "ai_prompts_001",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "線性回歸的從零開始實現",
+      "codex": {
+        "expected": "線性回歸的從零開始實作",
+        "acceptable": [
+          "線性回歸的從零開始實現",
+          "線性迴歸的從零開始實作",
+          "線性迴歸的從零開始實現"
+        ],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "實作 is preferred for coding from scratch, but technical 實現 also occurs in Taiwan. 回歸 and 迴歸 are both used; do not count preference alone as a gap."
+      },
+      "gemini": {
+        "acceptable": [
+          "線性回歸的從零開始實作",
+          "線性迴歸的從零開始實現",
+          "線性回歸的從零開始實現"
+        ],
+        "confidence": "medium",
+        "expected": "線性迴歸的從零開始實作",
+        "notes": "Changed 回归 -> 迴歸 (standard Taiwan statistics term) and 实现 -> 實作 (code implementation from scratch). 回歸 and 實現 are also used in Taiwan."
+      }
+    },
+    {
+      "id": "ai_prompts_002",
+      "status": "zhtw-ok-agreed",
+      "zhtw_4_5_0": "因此，為了實現對無碳高速鋼產品的產品品質及其穩定性的精準調控，深入探索和明晰其影響機制十分關鍵",
+      "codex": {
+        "expected": "因此，為了實現對無碳高速鋼產品的產品品質及其穩定性的精準調控，深入探索和明晰其影響機制十分關鍵",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": false,
+        "notes": "實現 means achieving precise control, not implementing software. 品質 is already correct. Preserve the repeated 產品 and original wording."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "因此，為了實現對無碳高速鋼產品的產品品質及其穩定性的精準調控，深入探索和明晰其影響機制十分關鍵",
+        "notes": "Changed 质量 -> 品質 (product quality in Taiwan). Kept 實現 because it means achieving a goal here."
+      }
+    },
+    {
+      "id": "ai_prompts_003",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大模型1，服務於10億人口",
+      "codex": {
+        "expected": "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大模型1，服務於10億人口",
+        "acceptable": [
+          "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大型模型1，服務於10億人口"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "大模型 and 大型模型 both occur in Taiwan AI usage. Do not add 語言 without evidence of model type. Preserve names, the leading colon, and the attached 1."
+      },
+      "gemini": {
+        "acceptable": [
+          "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大模型1，服務於10億人口",
+          "：西湖心辰獲得湯姆貓策略投資，致力於打造高情商通用大型模型1，服務於10億人口",
+          "：西湖心辰獲得湯姆貓策略投資，致力於打造高情商通用大模型1，服務於10億人口"
+        ],
+        "confidence": "medium",
+        "expected": "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大型模型1，服務於10億人口",
+        "notes": "Changed 大模型 -> 大型模型 (common Taiwan AI term; 大模型 is also seen). Kept 戰略投資 as it is normal in Taiwan news (策略投資 is also acceptable). Kept leading colon and numbers."
+      }
+    },
+    {
+      "id": "ai_prompts_004",
+      "status": "needs-decision",
+      "zhtw_4_5_0": "某些Androidapp可以禁止截圖，如何實現的",
+      "codex": {
+        "expected": "某些Androidapp可以禁止截圖，如何實現的",
+        "acceptable": [
+          "某些Androidapp可以禁止截圖，如何實作的"
+        ],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "實現 can mean achieving the blocking behavior; 實作 fits a coding reading. Android and 截圖 are acceptable. The source has no space before app, so Androidapp is not a lost-space defect."
+      },
+      "gemini": {
+        "acceptable": [
+          "某些安卓app可以禁止截圖，如何實作的"
+        ],
+        "confidence": "medium",
+        "expected": "某些安卓app可以禁止截圖，如何實現的",
+        "notes": "Changed 截屏 -> 截圖 (Taiwan term for screenshot). Kept 實現 as it is normal in Taiwan for asking how a feature works (實作 is also natural). Kept 安卓 and lowercase app."
+      }
+    },
+    {
+      "id": "ai_prompts_005",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "寫一份市長的質量強市工作大會講話稿，字數兩千字",
+      "codex": {
+        "expected": "寫一份市長的質量強市工作大會講話稿，字數兩千字",
+        "acceptable": [],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "Treat 質量強市 as the established mainland policy or meeting label. Changing its internal wording to 品質 could alter that label; this is not a general exemption for 質量 meaning quality."
+      },
+      "gemini": {
+        "acceptable": [
+          "寫一份市長的質量強市工作大會講話稿，字數兩千字",
+          "寫一份市長的品質強市工作大會演講稿，字數兩千字"
+        ],
+        "confidence": "medium",
+        "expected": "寫一份市長的品質強市工作大會講話稿，字數兩千字",
+        "notes": "Changed 质量 -> 品質 (quality in Taiwan). 質量強市 is also acceptable as a fixed Mainland policy slogan, and 演講稿 is an acceptable Taiwan term for 講話稿."
+      }
+    },
+    {
+      "id": "ai_prompts_006",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "項目式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行項目設計和實施",
+      "codex": {
+        "expected": "專題式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專題設計和實施",
+        "acceptable": [
+          "專案式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專案設計和實施",
+          "專題式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專案設計和實施"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": true,
+        "notes": "Project-based learning uses 專題式學習 or 專案式學習 in Taiwan. Both occurrences of 項目 refer to learning projects, not list items. Keep the source grammar."
+      },
+      "gemini": {
+        "acceptable": [
+          "專案式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專案設計和實施",
+          "專題式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專案設計和實施"
+        ],
+        "confidence": "medium",
+        "expected": "專題式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專題設計和實施",
+        "notes": "Changed 项目式学习 -> 專題式學習 and 项目设计 -> 專題設計 (standard Taiwan education terms for project-based learning; 專案 variants are also common)."
+      }
+    },
+    {
+      "id": "ai_prompts_007",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "實驗結果表明，該方法相比傳統的提取邊界點擬合隧道中軸線方法，有著更快更高效的提取速度和質量",
+      "codex": {
+        "expected": "實驗結果表明，該方法相比傳統的提取邊界點擬合隧道中軸線方法，有著更快更高效的提取速度和品質",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "質量 describes extraction quality, not physical mass, so use 品質. Keep the source's awkward speed-and-quality comparison; do not edit its style."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "實驗結果表明，該方法相比傳統的提取邊界點擬合隧道中軸線方法，有著更快更高效的提取速度和品質",
+        "notes": "Changed 质量 -> 品質 (quality in Taiwan). Kept 提取 and 擬合 as both are normal in Taiwan engineering writing."
+      }
+    },
+    {
+      "id": "ai_prompts_008",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "支持虛擬目錄的ftpserver",
+      "codex": {
+        "expected": "支援虛擬目錄的ftpserver",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "Software support for a feature is 支援 here. Keep ftpserver lowercase and joined, with no added spaces."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "支援虛擬目錄的ftpserver",
+        "notes": "Changed 支持 -> 支援 (software feature support in Taiwan). Kept ftpserver unchanged."
+      }
+    },
+    {
+      "id": "ai_prompts_009",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "寫一個程序，解析cad文件中所有機電設備資訊",
+      "codex": {
+        "expected": "寫一個程式，解析cad檔案中所有機電設備資訊",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "程序 is a computer program, so use 程式. cad文件 is a computer file, so use cad檔案. 資訊 is already correct; preserve lowercase cad."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "寫一個程式，解析cad檔案中所有機電設備資訊",
+        "notes": "Changed 程序 -> 程式 (software program), 文件 -> 檔案 (computer file), and 信息 -> 資訊 (information) per Taiwan IT usage. Kept lowercase cad."
+      }
+    },
+    {
+      "id": "ai_prompts_010",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "使用grad-cam畫出大模型的圖",
+      "codex": {
+        "expected": "使用grad-cam畫出大模型的圖",
+        "acceptable": [
+          "使用grad-cam畫出大型模型的圖"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "大模型 is also used in Taiwan. The prompt does not establish a language model; do not expand it to 大型語言模型. Keep grad-cam unchanged."
+      },
+      "gemini": {
+        "acceptable": [
+          "使用grad-cam畫出大模型的圖"
+        ],
+        "confidence": "medium",
+        "expected": "使用grad-cam畫出大型模型的圖",
+        "notes": "Changed 大模型 -> 大型模型 (standard Taiwan AI phrasing; 大模型 is also acceptable in casual tech chat). Kept grad-cam unchanged."
+      }
+    },
+    {
+      "id": "ai_prompts_011",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "介紹一下大模型寫SQL的能力",
+      "codex": {
+        "expected": "介紹一下大模型寫SQL的能力",
+        "acceptable": [
+          "介紹一下大型模型寫SQL的能力"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "大模型 is accepted Taiwan AI shorthand; 大型模型 is another valid form. SQL generation suggests a language model but does not require adding that unstated category."
+      },
+      "gemini": {
+        "acceptable": [
+          "介紹一下大模型寫SQL的能力"
+        ],
+        "confidence": "medium",
+        "expected": "介紹一下大型模型寫SQL的能力",
+        "notes": "Changed 大模型 -> 大型模型 (standard Taiwan AI phrasing; 大模型 is also acceptable in casual tech chat). Kept SQL unchanged."
+      }
+    },
+    {
+      "id": "ai_prompts_012",
+      "status": "zhtw-ok-agreed",
+      "zhtw_4_5_0": "對於設備件和程序，必須遵守至少 40 或 50 項",
+      "codex": {
+        "expected": "對於設備件和程序，必須遵守至少 40 或 50 項",
+        "acceptable": [],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "This incomplete sentence does not establish that 程序 means software. Keep the valid procedure reading and all spaces around 40 and 50; do not repair 設備件 or supply missing text."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "對於設備件和程序，必須遵守至少 40 或 50 項",
+        "notes": "Kept 程序 unchanged because it refers to compliance procedures, not computer programs. Kept spacing around numbers."
+      }
+    },
+    {
+      "id": "ai_prompts_013",
+      "status": "needs-decision",
+      "zhtw_4_5_0": "本項目研究目標與總體科學目標相輔想成",
+      "codex": {
+        "expected": "本項目研究目標與總體科學目標相輔想成",
+        "acceptable": [],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "項目 can refer to a research item and also appears in Taiwan research descriptions. Without its referent, do not force 計畫 or 專案. Preserve the source typo 相輔想成."
+      },
+      "gemini": {
+        "acceptable": [
+          "本專案研究目標與總體科學目標相輔想成"
+        ],
+        "confidence": "medium",
+        "expected": "本計畫研究目標與總體科學目標相輔想成",
+        "notes": "Changed 项目 -> 計畫 (standard Taiwan term for a research project; 專案 is also acceptable). Kept input typo 相輔想成 without fixing it."
+      }
+    },
+    {
+      "id": "ai_prompts_014",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "mysql8.0  text類型默認長度",
+      "codex": {
+        "expected": "mysql8.0  text類型預設長度",
+        "acceptable": [
+          "mysql8.0  text型別預設長度",
+          "mysql8.0  text型態預設長度"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": true,
+        "notes": "默認 means default, so use 預設. 類型, 型別, and 型態 are accepted variants in this context; only 默認 is a required correction. Preserve both spaces and Latin case."
+      },
+      "gemini": {
+        "acceptable": [
+          "mysql8.0  text型別預設長度"
+        ],
+        "confidence": "high",
+        "expected": "mysql8.0  text類型預設長度",
+        "notes": "Changed 默认 -> 預設 (default in Taiwan IT). Kept 類型 as it is normal in Taiwan (型別 is also acceptable). Preserved the double space."
+      }
+    },
+    {
+      "id": "ai_prompts_015",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "請幫我生成一段程序，用西門子SCL語言編寫，實現PID功能",
+      "codex": {
+        "expected": "請幫我生成一段程式，用西門子SCL語言編寫，實現PID功能",
+        "acceptable": [
+          "請幫我生成一段程式，用西門子SCL語言編寫，實作PID功能"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": true,
+        "notes": "SCL establishes 程序 as program code, so use 程式. 實現PID功能 can describe achieving the function; 實作PID功能 is also valid. Keep 生成, SCL, and PID."
+      },
+      "gemini": {
+        "acceptable": [
+          "請幫我生成一段程式，用西門子SCL語言編寫，實作PID功能"
+        ],
+        "confidence": "high",
+        "expected": "請幫我生成一段程式，用西門子SCL語言編寫，實現PID功能",
+        "notes": "Changed 程序 -> 程式 (PLC/computer program). Kept 實現 as it is normal in Taiwan for achieving a function (實作 is also acceptable)."
+      }
+    },
+    {
+      "id": "ai_prompts_016",
+      "status": "needs-decision",
+      "zhtw_4_5_0": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+      "codex": {
+        "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+        "acceptable": [
+          "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "支持向量機 and 支援向量機 both occur in Taiwan academic use. Do not apply the software-feature 支持-to-支援 rule inside this established name. 實現 describes the achieved diagnosis capability."
+      },
+      "gemini": {
+        "acceptable": [
+          "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，通過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+          "汽車電氣設備產生故障，基於機器學習方法如類神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷"
+        ],
+        "confidence": "high",
+        "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+        "notes": "Changed 网络 -> 網路, 支持向量机 -> 支援向量機, 通过 -> 透過 (meaning 'via/by'), and 数据 -> 資料. Kept 實現 (achieving a goal). 類神經網路 and 通過 are also acceptable."
+      }
+    },
+    {
+      "id": "ai_prompts_017",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "vue3 如何實現刷新不改變ref的值",
+      "codex": {
+        "expected": "vue3 如何實現重新整理不改變ref的值",
+        "acceptable": [
+          "vue3 如何實作重新整理不改變ref的值"
+        ],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": true,
+        "notes": "Read 刷新 as refreshing the page or view, hence 重新整理. 實現 and 實作 are both allowed. Page reload versus component refresh is not explicit; preserve the source grammar and its one space."
+      },
+      "gemini": {
+        "acceptable": [
+          "vue3 如何實現重整不改變ref的值"
+        ],
+        "confidence": "high",
+        "expected": "vue3 如何實現重新整理不改變ref的值",
+        "notes": "Changed 刷新 -> 重新整理 (browser refresh in Taiwan; 重整 is also acceptable). Kept 實現 and exact spacing."
+      }
+    },
+    {
+      "id": "ai_prompts_018",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "1.\t勾選“保留使用者資料”則解除安裝時將保留設定項、語言選擇等，不勾選則解除安裝時刪除，默認不勾選；",
+      "codex": {
+        "expected": "1.\t勾選“保留使用者資料”則解除安裝時將保留設定項、語言選擇等，不勾選則解除安裝時刪除，預設不勾選；",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "Change 默認 to 預設. Other regional conversions are already correct. Preserve the real U+0009 tab after 1. and the curly quote marks; JSON encodes that tab as \\t."
+      },
+      "gemini": {
+        "acceptable": [
+          "1.\t勾選“保留使用者資料”則解除安裝時將保留設定項目、語言選擇等，不勾選則解除安裝時刪除，預設不勾選；",
+          "1.\t勾選“保留使用者資料”則移除時將保留設定項、語言選擇等，不勾選則移除時刪除，預設不勾選；"
+        ],
+        "confidence": "high",
+        "expected": "1.\t勾選“保留使用者資料”則解除安裝時將保留設定項、語言選擇等，不勾選則解除安裝時刪除，預設不勾選；",
+        "notes": "Changed 用户 -> 使用者, 数据 -> 資料, 卸载 -> 解除安裝, 设置 -> 設定, and 默认 -> 預設. Preserved the tab and original quote marks."
+      }
+    },
+    {
+      "id": "ai_prompts_019",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "自高中至今，我的圖書館借書記錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域",
+      "codex": {
+        "expected": "自高中至今，我的圖書館借書記錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": false,
+        "notes": "刷新 refers to renewing or surpassing a borrowing record, which is normal Taiwan usage. It is not a browser refresh. Keep 記錄 and the original sentence."
+      },
+      "gemini": {
+        "acceptable": [
+          "自高中至今，我的圖書館借書記錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域"
+        ],
+        "confidence": "high",
+        "expected": "自高中至今，我的圖書館借書紀錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域",
+        "notes": "Kept 刷新 unchanged because it means breaking a record, not reloading a page. Changed 记录 -> 紀錄 (noun form preferred in Taiwan; 記錄 is also acceptable)."
+      }
+    },
+    {
+      "id": "ai_prompts_020",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "點擊“立即安裝”，直接跳轉到輪播圖並把軟體安裝到默認路徑",
+      "codex": {
+        "expected": "點擊“立即安裝”，直接跳轉到輪播圖並把軟體安裝到預設路徑",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "默認路徑 means 預設路徑. 軟體 is already correct. Do not replace the source quote marks or rewrite the other interface wording merely for style."
+      },
+      "gemini": {
+        "acceptable": [
+          "點選“立即安裝”，直接跳轉到輪播圖並把軟體安裝到預設路徑"
+        ],
+        "confidence": "high",
+        "expected": "點擊“立即安裝”，直接跳轉到輪播圖並把軟體安裝到預設路徑",
+        "notes": "Changed 软件 -> 軟體 and 默认 -> 預設. Kept 點擊 (normal in Taiwan; 點選 is also acceptable), 跳轉, and original quote marks."
+      }
+    },
+    {
+      "id": "ai_prompts_021",
+      "status": "zhtw-ok-agreed",
+      "zhtw_4_5_0": "兵馬俑是中國重要的文物，其長期的保存與修復工作是非常有必要的",
+      "codex": {
+        "expected": "兵馬俑是中國重要的文物，其長期的保存與修復工作是非常有必要的",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": false,
+        "notes": "保存 means preserving cultural relics. It is correct Taiwan usage and must not become 儲存."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "兵馬俑是中國重要的文物，其長期的保存與修復工作是非常有必要的",
+        "notes": "Script conversion only. Kept 保存 unchanged because it refers to preserving relics, not saving computer files."
+      }
+    },
+    {
+      "id": "ai_prompts_022",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "現在，假設機器人（又叫智慧體、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+      "codex": {
+        "expected": "現在，假設機器人（又叫智慧體、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+        "acceptable": [
+          "現在，假設機器人（又叫智慧型代理人、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+          "現在，假設機器人（又叫智慧代理人、agent）位於2號房間，其目標是以最短的路徑到達5號房間"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "智慧體 is documented Taiwan agent terminology, including reinforcement learning. 智慧型代理人 and 智慧代理人 are also valid. Keep agent, digits, and fullwidth parentheses unchanged."
+      },
+      "gemini": {
+        "acceptable": [
+          "現在，假設機器人（又叫代理人、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+          "現在，假設機器人（又叫智慧體、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+          "現在，假設機器人（又叫代理、agent）位於2號房間，其目標是以最短的路徑到達5號房間"
+        ],
+        "confidence": "medium",
+        "expected": "現在，假設機器人（又叫智慧代理人、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+        "notes": "Changed 智能体 -> 智慧代理人 (Taiwan AI/RL term for intelligent agent; 代理人, 智慧體, and 代理 are also acceptable). Kept agent and numbers unchanged."
+      }
+    },
+    {
+      "id": "ai_prompts_023",
+      "status": "preference-differs",
+      "zhtw_4_5_0": "整個框架包括智慧體、環境、狀態、動作以及獎勵",
+      "codex": {
+        "expected": "整個框架包括智慧體、環境、狀態、動作以及獎勵",
+        "acceptable": [
+          "整個框架包括智慧型代理人、環境、狀態、動作以及獎勵",
+          "整個框架包括智慧代理人、環境、狀態、動作以及獎勵"
+        ],
+        "confidence": "high",
+        "risk": "high",
+        "zhtw_gap": false,
+        "notes": "The state/action/reward context identifies a reinforcement-learning agent. 智慧體 is valid Taiwan usage, alongside the listed agent translations."
+      },
+      "gemini": {
+        "acceptable": [
+          "整個框架包括代理人、環境、狀態、動作以及獎勵",
+          "整個框架包括智慧體、環境、狀態、動作以及獎勵",
+          "整個框架包括代理、環境、狀態、動作以及獎勵"
+        ],
+        "confidence": "medium",
+        "expected": "整個框架包括智慧代理人、環境、狀態、動作以及獎勵",
+        "notes": "Changed 智能体 -> 智慧代理人 (Taiwan RL term for agent; 代理人, 智慧體, and 代理 are also acceptable)."
+      }
+    },
+    {
+      "id": "ai_prompts_024",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "ios長按摳圖後怎麼保存",
+      "codex": {
+        "expected": "ios長按去背後怎麼儲存",
+        "acceptable": [],
+        "confidence": "high",
+        "risk": "low",
+        "zhtw_gap": true,
+        "notes": "In the iOS long-press photo context, 摳圖 is 去背 and 保存 is 儲存. The missed 去背 is an additional term gap. Keep lowercase ios and add no spaces."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "ios長按去背後怎麼儲存",
+        "notes": "Changed 抠图 -> 去背 (Taiwan term for image cutout) and 保存 -> 儲存 (saving a digital image on iOS). Kept lowercase ios."
+      }
+    },
+    {
+      "id": "ai_prompts_025",
+      "status": "zhtw-gap-agreed",
+      "zhtw_4_5_0": "使用者登入資訊表：實體類，用於保存使用者名稱和密碼",
+      "codex": {
+        "expected": "使用者登入資訊表：實體類別，用於儲存使用者名稱和密碼",
+        "acceptable": [
+          "使用者登入資訊表：實體類別，用於保存使用者名稱和密碼"
+        ],
+        "confidence": "medium",
+        "risk": "high",
+        "zhtw_gap": true,
+        "notes": "The programming term 實體類 needs 實體類別. 儲存 fits stored credentials; 保存 also works when describing retained state. The class-term gap remains either way. Do not add security advice to the source."
+      },
+      "gemini": {
+        "acceptable": [],
+        "confidence": "high",
+        "expected": "使用者登入資訊表：實體類別，用於儲存使用者名稱和密碼",
+        "notes": "Changed 用户 -> 使用者, 登录 -> 登入, 信息 -> 資訊, 实体类 -> 實體類別, 保存 -> 儲存 (storing data), and 用户名 -> 使用者名稱 per Taiwan IT usage."
+      }
+    }
+  ]
+}

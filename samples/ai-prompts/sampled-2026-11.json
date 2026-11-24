@@ -1,0 +1,324 @@
+{
+  "metadata": {
+    "source": "allenai/WildChat-1M",
+    "source_url": "https://huggingface.co/datasets/allenai/WildChat-1M",
+    "source_revision": "7d6490e462285cf85d91eabea0f9a954fbddcd1f",
+    "license": "ODC-BY-1.0",
+    "attribution": "WildChat-1M, Allen Institute for AI (Zhao et al., 2024), ODC-BY",
+    "collected_date": "2026-11-24",
+    "description": "公開 AI 對話資料中使用者寫的中文短句。挑選 zhtw 4.5.0 轉換後仍含常見大陸 IT／對話用語（程序、默認、質量、刷新、項目、支持、實現、保存、大模型、智能體）的句子。已排除個人資料、商業往來內容與攻擊類文字；原文為繁體的句子不收。",
+    "zhtw_version": "4.5.0",
+    "auto_generated": false,
+    "review_status": "unverified",
+    "review_method": "Codex（gpt-6-astra）先提出 expected，Gemini（gemini-4-neon-high，經 agy）只看 input 與規則獨立審查；兩者皆為 advisory，維護者確認後才算 human decision。",
+    "review_file": "sampled-2026-11.ai-review.json",
+    "status_counts": {
+      "preference-differs": 8,
+      "zhtw-ok-agreed": 3,
+      "needs-decision": 3,
+      "zhtw-gap-agreed": 11
+    }
+  },
+  "corpus": [
+    {
+      "id": "ai_prompts_001",
+      "input": "线性回归的从零开始实现",
+      "expected": "線性回歸的從零開始實作",
+      "tags": [
+        "ai-prompts",
+        "implement",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「線性迴歸的從零開始實作」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_002",
+      "input": "因此，为了实现对无碳高速钢产品的产品质量及其稳定性的精准调控，深入探索和明晰其影响机制十分关键",
+      "expected": "因此，為了實現對無碳高速鋼產品的產品品質及其穩定性的精準調控，深入探索和明晰其影響機制十分關鍵",
+      "tags": [
+        "ai-prompts",
+        "implement",
+        "zhtw-ok-agreed",
+        "unverified"
+      ],
+      "notes": "Codex 與 Gemini 一致認為 zhtw 4.5.0 輸出正確（寧可少轉的例子）。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_003",
+      "input": "：西湖心辰获得汤姆猫战略投资，致力于打造高情商通用大模型1，服务于10亿人口",
+      "expected": "：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大模型1，服務於10億人口",
+      "tags": [
+        "ai-prompts",
+        "large-model",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「：西湖心辰獲得湯姆貓戰略投資，致力於打造高情商通用大型模型1，服務於10億人口」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_004",
+      "input": "某些安卓app可以禁止截屏，如何实现的",
+      "expected": "某些Androidapp可以禁止截圖，如何實現的",
+      "tags": [
+        "ai-prompts",
+        "implement",
+        "needs-decision",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「某些Androidapp可以禁止截圖，如何實現的」。Codex 首選即 expected，Gemini 首選「某些安卓app可以禁止截圖，如何實現的」，意見不同。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_005",
+      "input": "写一份市长的质量强市工作大会讲话稿，字数两千字",
+      "expected": "寫一份市長的質量強市工作大會講話稿，字數兩千字",
+      "tags": [
+        "ai-prompts",
+        "quality",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「寫一份市長的品質強市工作大會講話稿，字數兩千字」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_006",
+      "input": "项目式学习作为一种建构性的教与学方式，其特点是将学习与实践相结合，在真实的情境中进行项目设计和实施",
+      "expected": "專題式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行專題設計和實施",
+      "tags": [
+        "ai-prompts",
+        "project",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「項目式學習作為一種建構性的教與學方式，其特點是將學習與實踐相結合，在真實的情境中進行項目設計和實施」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_007",
+      "input": "实验结果表明，该方法相比传统的提取边界点拟合隧道中轴线方法，有着更快更高效的提取速度和质量",
+      "expected": "實驗結果表明，該方法相比傳統的提取邊界點擬合隧道中軸線方法，有著更快更高效的提取速度和品質",
+      "tags": [
+        "ai-prompts",
+        "quality",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「實驗結果表明，該方法相比傳統的提取邊界點擬合隧道中軸線方法，有著更快更高效的提取速度和質量」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_008",
+      "input": "支持虚拟目录的ftpserver",
+      "expected": "支援虛擬目錄的ftpserver",
+      "tags": [
+        "ai-prompts",
+        "support",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「支持虛擬目錄的ftpserver」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_009",
+      "input": "写一个程序，解析cad文件中所有机电设备信息",
+      "expected": "寫一個程式，解析cad檔案中所有機電設備資訊",
+      "tags": [
+        "ai-prompts",
+        "program",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「寫一個程序，解析cad文件中所有機電設備資訊」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_010",
+      "input": "使用grad-cam画出大模型的图",
+      "expected": "使用grad-cam畫出大模型的圖",
+      "tags": [
+        "ai-prompts",
+        "large-model",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「使用grad-cam畫出大型模型的圖」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_011",
+      "input": "介绍一下大模型写SQL的能力",
+      "expected": "介紹一下大模型寫SQL的能力",
+      "tags": [
+        "ai-prompts",
+        "large-model",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「介紹一下大型模型寫SQL的能力」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_012",
+      "input": "对于设备件和程序，必须遵守至少 40 或 50 项",
+      "expected": "對於設備件和程序，必須遵守至少 40 或 50 項",
+      "tags": [
+        "ai-prompts",
+        "program",
+        "zhtw-ok-agreed",
+        "unverified"
+      ],
+      "notes": "Codex 與 Gemini 一致認為 zhtw 4.5.0 輸出正確（寧可少轉的例子）。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_013",
+      "input": "本项目研究目标与总体科学目标相辅想成",
+      "expected": "本項目研究目標與總體科學目標相輔想成",
+      "tags": [
+        "ai-prompts",
+        "project",
+        "needs-decision",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「本項目研究目標與總體科學目標相輔想成」。Codex 首選即 expected，Gemini 首選「本計畫研究目標與總體科學目標相輔想成」，意見不同。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_014",
+      "input": "mysql8.0  text类型默认长度",
+      "expected": "mysql8.0  text類型預設長度",
+      "tags": [
+        "ai-prompts",
+        "default",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「mysql8.0  text類型默認長度」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_015",
+      "input": "请帮我生成一段程序，用西门子SCL语言编写，实现PID功能",
+      "expected": "請幫我生成一段程式，用西門子SCL語言編寫，實現PID功能",
+      "tags": [
+        "ai-prompts",
+        "program",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「請幫我生成一段程序，用西門子SCL語言編寫，實現PID功能」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_016",
+      "input": "汽车电气设备产生故障，基于机器学习方法如神经网络、支持向量机等，通过对大量故障数据进行学习和训练，实现自动化故障诊断",
+      "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+      "tags": [
+        "ai-prompts",
+        "support",
+        "needs-decision",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」。Codex 首選即 expected，Gemini 首選「汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」，意見不同。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_017",
+      "input": "vue3 如何实现刷新不改变ref的值",
+      "expected": "vue3 如何實現重新整理不改變ref的值",
+      "tags": [
+        "ai-prompts",
+        "refresh",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「vue3 如何實現刷新不改變ref的值」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_018",
+      "input": "1.\t勾选“保留用户数据”则卸载时将保留设置项、语言选择等，不勾选则卸载时删除，默认不勾选；",
+      "expected": "1.\t勾選“保留使用者資料”則解除安裝時將保留設定項、語言選擇等，不勾選則解除安裝時刪除，預設不勾選；",
+      "tags": [
+        "ai-prompts",
+        "default",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「1.\t勾選“保留使用者資料”則解除安裝時將保留設定項、語言選擇等，不勾選則解除安裝時刪除，默認不勾選；」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_019",
+      "input": "自高中至今，我的图书馆借书记录不断刷新，平均每年借阅图书达到10本以上，涵盖文学、哲学、历史等诸多领域",
+      "expected": "自高中至今，我的圖書館借書記錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域",
+      "tags": [
+        "ai-prompts",
+        "refresh",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「自高中至今，我的圖書館借書紀錄不斷刷新，平均每年借閱圖書達到10本以上，涵蓋文學、哲學、歷史等諸多領域」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_020",
+      "input": "点击“立即安装”，直接跳转到轮播图并把软件安装到默认路径",
+      "expected": "點擊“立即安裝”，直接跳轉到輪播圖並把軟體安裝到預設路徑",
+      "tags": [
+        "ai-prompts",
+        "default",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「點擊“立即安裝”，直接跳轉到輪播圖並把軟體安裝到默認路徑」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_021",
+      "input": "兵马俑是中国重要的文物，其长期的保存与修复工作是非常有必要的",
+      "expected": "兵馬俑是中國重要的文物，其長期的保存與修復工作是非常有必要的",
+      "tags": [
+        "ai-prompts",
+        "save",
+        "zhtw-ok-agreed",
+        "unverified"
+      ],
+      "notes": "Codex 與 Gemini 一致認為 zhtw 4.5.0 輸出正確（寧可少轉的例子）。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_022",
+      "input": "现在，假设机器人（又叫智能体、agent）位于2号房间，其目标是以最短的路径到达5号房间",
+      "expected": "現在，假設機器人（又叫智慧體、agent）位於2號房間，其目標是以最短的路徑到達5號房間",
+      "tags": [
+        "ai-prompts",
+        "agent",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「現在，假設機器人（又叫智慧代理人、agent）位於2號房間，其目標是以最短的路徑到達5號房間」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_023",
+      "input": "整个框架包括智能体、环境、状态、动作以及奖励",
+      "expected": "整個框架包括智慧體、環境、狀態、動作以及獎勵",
+      "tags": [
+        "ai-prompts",
+        "agent",
+        "preference-differs",
+        "unverified"
+      ],
+      "notes": "兩者都接受 zhtw 4.5.0 輸出；Codex 首選即 expected，Gemini 首選「整個框架包括智慧代理人、環境、狀態、動作以及獎勵」。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_024",
+      "input": "ios长按抠图后怎么保存",
+      "expected": "ios長按去背後怎麼儲存",
+      "tags": [
+        "ai-prompts",
+        "save",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「ios長按摳圖後怎麼保存」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    },
+    {
+      "id": "ai_prompts_025",
+      "input": "用户登录信息表：实体类，用于保存用户名和密码",
+      "expected": "使用者登入資訊表：實體類別，用於儲存使用者名稱和密碼",
+      "tags": [
+        "ai-prompts",
+        "save",
+        "zhtw-gap-agreed",
+        "unverified"
+      ],
+      "notes": "zhtw 4.5.0 輸出「使用者登入資訊表：實體類，用於保存使用者名稱和密碼」。Codex 與 Gemini 一致認為需改，建議同 expected。待維護者確認。"
+    }
+  ]
+}

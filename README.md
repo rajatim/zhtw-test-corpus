@@ -144,6 +144,12 @@ zhtw test --corpus tests/data/corpus
 | `wiki/` | 原創模擬 | CC-BY-4.0 |
 | `regressions/` | 用戶回報 | CC-BY-4.0 |
 
+### 抽樣語料
+
+| 目錄 | 來源 | 授權 |
+|------|------|------|
+| `samples/ai-prompts/` | [allenai/WildChat-1M](https://huggingface.co/datasets/allenai/WildChat-1M)（Allen Institute for AI） | ODC-BY-1.0 |
+
 ### 大型語料庫
 
 | 資料集 | 來源 | 授權 |
