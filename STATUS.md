@@ -72,3 +72,22 @@ python scripts/sample_corpus.py --count 50 --use-zhtw
 
 1. **人工確認** `samples/ai-prompts/sampled-2026-11.json` 的 25 句（tags 有 `unverified`）
 2. 確認後移到 `tech/` 或 `regressions/`，再另案評估 zhtw 字典修改
+
+## 📋 進度紀錄（2026-11-25）— 維護者確認意見不同的 3 句
+
+### ✅ 已完成
+
+1. **維護者確認 `samples/ai-prompts/sampled-2026-11.json` 中兩個 AI 意見不同的 3 句，都採用 Gemini 版本**
+   - `ai_prompts_004`：保留「安卓app」，不轉成「Androidapp」
+   - `ai_prompts_013`：研究計畫書的「本项目」寫成「本計畫」
+   - `ai_prompts_016`：「支持向量机」寫成「支援向量機」
+   - 這 3 句的 tags 改成 `zhtw-gap-confirmed`、`human-confirmed`；決定也記在
+     `sampled-2026-11.ai-review.json` 每句的 `human_decision`
+
+### 🔄 待處理
+
+1. 其餘 22 句仍是 `unverified`（11 句兩個 AI 都認為 zhtw 需改、3 句都認為 zhtw 正確、8 句只是首選不同）
+2. 已確認的 3 句都是 zhtw 4.5.0 目前轉錯的句子。zhtw 的 `tests/test_corpus.py` 會嚴格比對
+   `news/`、`regressions/`、`social/`、`tech/`、`wiki/` 的句子，所以要等 zhtw 修好後再移過去，
+   否則 zhtw 的測試會失敗
+3. 另案評估 zhtw 字典：「安卓」是否保留、研究語境的「项目」→「計畫」、「支持向量机」→「支援向量機」

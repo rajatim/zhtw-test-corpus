@@ -11,6 +11,14 @@
       "zhtw-ok-agreed": 3,
       "needs-decision": 3,
       "zhtw-gap-agreed": 11
+    },
+    "human_decisions": {
+      "date": "2026-11-25",
+      "ids": [
+        "ai_prompts_004",
+        "ai_prompts_013",
+        "ai_prompts_016"
+      ]
     }
   },
   "cases": [
@@ -106,6 +114,13 @@
         "confidence": "medium",
         "expected": "某些安卓app可以禁止截圖，如何實現的",
         "notes": "Changed 截屏 -> 截圖 (Taiwan term for screenshot). Kept 實現 as it is normal in Taiwan for asking how a feature works (實作 is also natural). Kept 安卓 and lowercase app."
+      },
+      "human_decision": {
+        "date": "2026-11-25",
+        "decided_by": "maintainer",
+        "chosen": "gemini",
+        "expected": "某些安卓app可以禁止截圖，如何實現的",
+        "reason": "保留「安卓」，不轉成「Android」"
       }
     },
     {
@@ -296,6 +311,13 @@
         "confidence": "medium",
         "expected": "本計畫研究目標與總體科學目標相輔想成",
         "notes": "Changed 项目 -> 計畫 (standard Taiwan term for a research project; 專案 is also acceptable). Kept input typo 相輔想成 without fixing it."
+      },
+      "human_decision": {
+        "date": "2026-11-25",
+        "decided_by": "maintainer",
+        "chosen": "gemini",
+        "expected": "本計畫研究目標與總體科學目標相輔想成",
+        "reason": "研究計畫書的「本项目」寫成「本計畫」"
       }
     },
     {
@@ -367,6 +389,13 @@
         "confidence": "high",
         "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
         "notes": "Changed 网络 -> 網路, 支持向量机 -> 支援向量機, 通过 -> 透過 (meaning 'via/by'), and 数据 -> 資料. Kept 實現 (achieving a goal). 類神經網路 and 通過 are also acceptable."
+      },
+      "human_decision": {
+        "date": "2026-11-25",
+        "decided_by": "maintainer",
+        "chosen": "gemini",
+        "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+        "reason": "「支持向量机」寫成「支援向量機」"
       }
     },
     {

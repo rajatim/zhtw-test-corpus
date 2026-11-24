@@ -9,14 +9,23 @@
     "description": "公開 AI 對話資料中使用者寫的中文短句。挑選 zhtw 4.5.0 轉換後仍含常見大陸 IT／對話用語（程序、默認、質量、刷新、項目、支持、實現、保存、大模型、智能體）的句子。已排除個人資料、商業往來內容與攻擊類文字；原文為繁體的句子不收。",
     "zhtw_version": "4.5.0",
     "auto_generated": false,
-    "review_status": "unverified",
+    "review_status": "partially-verified",
     "review_method": "Codex（gpt-6-astra）先提出 expected，Gemini（gemini-4-neon-high，經 agy）只看 input 與規則獨立審查；兩者皆為 advisory，維護者確認後才算 human decision。",
     "review_file": "sampled-2026-11.ai-review.json",
     "status_counts": {
       "preference-differs": 8,
       "zhtw-ok-agreed": 3,
-      "needs-decision": 3,
-      "zhtw-gap-agreed": 11
+      "zhtw-gap-agreed": 11,
+      "zhtw-gap-confirmed": 3
+    },
+    "human_review": {
+      "date": "2026-11-25",
+      "confirmed_ids": [
+        "ai_prompts_004",
+        "ai_prompts_013",
+        "ai_prompts_016"
+      ],
+      "description": "維護者確認兩個 AI 意見不同的 3 句；其餘句子仍是 unverified。"
     }
   },
   "corpus": [
@@ -59,14 +68,14 @@
     {
       "id": "ai_prompts_004",
       "input": "某些安卓app可以禁止截屏，如何实现的",
-      "expected": "某些Androidapp可以禁止截圖，如何實現的",
+      "expected": "某些安卓app可以禁止截圖，如何實現的",
       "tags": [
         "ai-prompts",
         "implement",
-        "needs-decision",
-        "unverified"
+        "zhtw-gap-confirmed",
+        "human-confirmed"
       ],
-      "notes": "zhtw 4.5.0 輸出「某些Androidapp可以禁止截圖，如何實現的」。Codex 首選即 expected，Gemini 首選「某些安卓app可以禁止截圖，如何實現的」，意見不同。待維護者確認。"
+      "notes": "zhtw 4.5.0 輸出「某些Androidapp可以禁止截圖，如何實現的」。Codex 首選「某些Androidapp可以禁止截圖，如何實現的」，Gemini 首選「某些安卓app可以禁止截圖，如何實現的」。維護者於 2026-11-25 確認採用 Gemini 版本：保留「安卓」，不轉成「Android」。"
     },
     {
       "id": "ai_prompts_005",
@@ -167,14 +176,14 @@
     {
       "id": "ai_prompts_013",
       "input": "本项目研究目标与总体科学目标相辅想成",
-      "expected": "本項目研究目標與總體科學目標相輔想成",
+      "expected": "本計畫研究目標與總體科學目標相輔想成",
       "tags": [
         "ai-prompts",
         "project",
-        "needs-decision",
-        "unverified"
+        "zhtw-gap-confirmed",
+        "human-confirmed"
       ],
-      "notes": "zhtw 4.5.0 輸出「本項目研究目標與總體科學目標相輔想成」。Codex 首選即 expected，Gemini 首選「本計畫研究目標與總體科學目標相輔想成」，意見不同。待維護者確認。"
+      "notes": "zhtw 4.5.0 輸出「本項目研究目標與總體科學目標相輔想成」。Codex 首選「本項目研究目標與總體科學目標相輔想成」，Gemini 首選「本計畫研究目標與總體科學目標相輔想成」。維護者於 2026-11-25 確認採用 Gemini 版本：研究計畫書的「本项目」寫成「本計畫」。"
     },
     {
       "id": "ai_prompts_014",
@@ -203,14 +212,14 @@
     {
       "id": "ai_prompts_016",
       "input": "汽车电气设备产生故障，基于机器学习方法如神经网络、支持向量机等，通过对大量故障数据进行学习和训练，实现自动化故障诊断",
-      "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
+      "expected": "汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷",
       "tags": [
         "ai-prompts",
         "support",
-        "needs-decision",
-        "unverified"
+        "zhtw-gap-confirmed",
+        "human-confirmed"
       ],
-      "notes": "zhtw 4.5.0 輸出「汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」。Codex 首選即 expected，Gemini 首選「汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」，意見不同。待維護者確認。"
+      "notes": "zhtw 4.5.0 輸出「汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」。Codex 首選「汽車電氣設備產生故障，基於機器學習方法如神經網路、支持向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」，Gemini 首選「汽車電氣設備產生故障，基於機器學習方法如神經網路、支援向量機等，透過對大量故障資料進行學習和訓練，實現自動化故障診斷」。維護者於 2026-11-25 確認採用 Gemini 版本：「支持向量机」寫成「支援向量機」。"
     },
     {
       "id": "ai_prompts_017",
